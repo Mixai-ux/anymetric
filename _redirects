@@ -1,0 +1,5 @@
+# Clean URL fallbacks (Cloudflare Pages handles .html stripping natively, this is a safety net)
+/geo-aeo-optimization.html /geo-aeo-optimization 301
+/on-premise-ai.html /on-premise-ai 301
+/results.html /results 301
+/white-label.html /white-label 301

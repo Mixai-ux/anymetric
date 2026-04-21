@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /
+
+# Block form confirmation pages — no indexing value
+Disallow: /thank-you
+Disallow: /playbook-sent
+
+# Block any future admin or preview paths
+Disallow: /admin/
+Disallow: /preview/
+
+Sitemap: https://anymetric.ai/sitemap.xml

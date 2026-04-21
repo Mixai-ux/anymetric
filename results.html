@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results — anymetric</title>
+<meta name="description" content="The metrics anymetric moved. Three problems, three service types, three measurable results — anonymized by client request, verified against agreed baselines.">
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://anymetric.ai/results">
+<meta property="og:title"       content="Results — anymetric">
+<meta property="og:description" content="Before and after. Real metrics, agreed baselines, verified results. Our names don't appear in press releases. Our impact shows up in quarterly reports.">
+<meta property="og:image"       content="https://anymetric.ai/og-image.png">
+<meta property="og:site_name"   content="anymetric">
+<meta name="twitter:card"       content="summary_large_image">
+<meta name="twitter:title"       content="Results — anymetric">
+<meta name="twitter:description" content="Before and after. Real metrics, agreed baselines, verified results. Our names don't appear in press releases. Our impact shows up in quarterly reports.">
+<meta name="twitter:image"        content="https://anymetric.ai/og-image.png">
+<link rel="canonical"           href="https://anymetric.ai/results">
+<script defer data-domain="anymetric.ai" src="https://plausible.io/js/script.tagged-events.js"></script>
+
+<!-- ── Microsoft Clarity (heatmaps, session recordings) ── -->
+<!-- TODO: replace CLARITY_PROJECT_ID after creating account at clarity.microsoft.com -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are your case studies anonymized?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Our clients are often enterprise brands and regulated businesses where competitive advantage depends on discretion. Many explicitly request that we not reference their company or results publicly. We respect that — the results speak for themselves without the name attached. For white-label work, NDA terms make attribution impossible by design." }
+    },
+    {
+      "@type": "Question",
+      "name": "How are the metric improvements verified?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every engagement begins with an agreed baseline metric and a documented measurement methodology. Improvements are verified against the same methodology used to establish the baseline — client analytics, CRM data, or agreed third-party measurement tools. We do not present estimated or projected figures as results." }
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1323;--navy-lo:#111827;--navy-mid:#151b2c;--navy-card:#1e2640;--accent:#ffb94c;--accent-dim:   #e8a020;--text:#dde2f9;--text-muted:rgba(221,226,249,0.48);--text-mid:rgba(221,226,249,0.72);--on-accent:#3a2200;--hairline:rgba(255,255,255,0.07);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--text);line-height:1.6;overflow-x:hidden;}
+.container{max-width:1200px;margin:0 auto;padding:0 48px;}
+.tag{font-size:10px;font-weight:700;letter-spacing:0.28em;color:var(--accent);text-transform:uppercase;border-bottom:1px solid rgba(255,185,76,0.4);padding-bottom:4px;display:inline-block;margin-bottom:24px;}
+.grad{background:linear-gradient(120deg,#ffb94c 0%,#ffe0a0 38%,#ffb94c 62%,#e07020 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 5s linear infinite;}
+@keyframes shimmer{to{background-position:200% center;}}
+.hl{height:1px;background:var(--hairline);}
+.btn-p{display:inline-block;padding:15px 30px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s;}
+.btn-p:hover{background:var(--accent-dim);transform:translateY(-1px);}
+.btn-g{display:inline-block;padding:15px 30px;background:transparent;color:var(--text);font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(221,226,249,0.25);cursor:pointer;transition:border-color .2s,color .2s;}
+.btn-g:hover{border-color:var(--accent);color:var(--accent);}
+.fl{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px;}
+input,textarea{background:transparent;color:var(--text);border:none;border-bottom:1px solid rgba(255,255,255,0.15);padding:12px 0;font-family:'Inter',sans-serif;font-size:14px;width:100%;outline:none;transition:border-color .2s;}
+input::placeholder,textarea::placeholder{color:var(--text-muted);}
+input:focus,textarea:focus{border-color:var(--accent);}
+section{padding:100px 0;position:relative;}
+.s-lo{background:var(--navy-lo);}
+.s-mid{background:var(--navy-mid);}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);padding:0 0 0 48px;}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;padding-right:48px;}
+.nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--text);}
+.nav-wordmark{font-weight:300;font-size:16px;letter-spacing:0.08em;color:var(--text);}
+.nav-back{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s;}
+.nav-back:hover{color:var(--accent);}
+.nav-back::before{content:'← ';}
+.nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-hamburger span{display:block;height:1.5px;background:var(--text-mid);border-radius:2px;transition:transform .25s,opacity .2s;}
+.nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-hamburger.open span:nth-child(2){opacity:0;}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.nav-drawer{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(13,19,35,0.97);backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);z-index:199;padding:24px 32px 32px;flex-direction:column;}
+.nav-drawer.open{display:flex;}
+.nav-drawer a{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--hairline);transition:color .2s;}
+.nav-drawer a:last-child{border-bottom:none;}
+.nav-drawer a:hover{color:var(--accent);}
+
+/* ── HERO ── */
+.page-hero{padding:160px 0 80px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;width:600px;height:500px;top:-80px;right:-80px;background:radial-gradient(ellipse,rgba(110,80,220,0.1) 0%,transparent 65%);pointer-events:none;}
+.breadcrumb{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:32px;opacity:0;animation:fu .7s ease .1s forwards;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb span{margin:0 10px;opacity:.4;}
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+/* ── AGGREGATE METRICS ── */
+.agg-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--hairline);}
+.agg-cell{background:var(--navy);padding:40px 24px;text-align:center;}
+.agg-num{font-size:40px;font-weight:900;line-height:1;background:linear-gradient(135deg,#ffb94c 0%,#ffe0a0 45%,#e07020 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.agg-svc{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:10px 0 6px;}
+.agg-lbl{font-size:12px;color:var(--text-muted);line-height:1.45;}
+
+/* ── CASE STUDIES ── */
+.cs-grid{display:grid;grid-template-columns:1fr;gap:2px;background:var(--hairline);}
+.cs-card{background:var(--navy);padding:0;}
+.cs-header{display:grid;grid-template-columns:280px 1fr auto;gap:40px;align-items:start;padding:48px 48px 40px;border-bottom:1px solid var(--hairline);}
+.cs-meta-industry{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.cs-title{font-size:22px;font-weight:800;line-height:1.25;margin-bottom:12px;}
+.cs-summary{font-size:14px;color:var(--text-muted);line-height:1.65;}
+.cs-badges{display:flex;flex-direction:column;gap:8px;flex-shrink:0;}
+.cs-badge{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,185,76,0.25);color:var(--accent);padding:6px 12px;white-space:nowrap;}
+.cs-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);}
+.cs-metric{background:var(--navy);padding:28px 32px;}
+.cs-metric-label{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;}
+.cs-metric-before{font-size:13px;color:var(--text-muted);margin-bottom:4px;}
+.cs-metric-after{font-size:28px;font-weight:900;line-height:1;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.cs-metric-delta{display:inline-block;font-size:11px;font-weight:700;color:#4caf50;margin-top:4px;}
+.cs-detail{padding:32px 48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.cs-detail-section h4{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+.cs-detail-section ul{list-style:none;}
+.cs-detail-section ul li{font-size:13px;color:var(--text-muted);padding:6px 0;border-bottom:1px solid var(--hairline);line-height:1.55;}
+.cs-detail-section ul li:last-child{border-bottom:none;}
+.cs-detail-section ul li::before{content:'→ ';color:var(--accent);font-weight:700;}
+.cs-timeline{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);padding-top:12px;}
+.cs-timeline strong{color:var(--accent);}
+
+/* ── PROVENANCE ── */
+.prov-grid{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:center;}
+.prov-logos{display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
+.prov-logo{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--text-muted);opacity:.7;}
+.prov-pull{font-size:20px;font-style:italic;color:var(--text-mid);line-height:1.6;border-left:2px solid var(--accent);padding-left:28px;}
+
+/* ── METHODOLOGY ── */
+.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
+.method-item{background:var(--navy);padding:36px 32px;}
+.method-n{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:14px;}
+.method-t{font-size:16px;font-weight:800;margin-bottom:10px;}
+.method-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+
+/* ── FAQ ── */
+.faq-item{border-bottom:1px solid var(--hairline);}
+.faq-q{padding:22px 0;font-size:15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;transition:color .2s;}
+.faq-q:hover,.faq-item.open .faq-q{color:var(--accent);}
+.faq-tog::before{content:'+';}
+.faq-item.open .faq-tog::before{content:'−';}
+.faq-tog{font-size:22px;color:var(--accent);font-weight:300;flex-shrink:0;}
+.faq-a{display:none;padding:0 0 22px;font-size:14px;color:var(--text-muted);line-height:1.75;}
+.faq-item.open .faq-a{display:block;}
+
+/* ── CTA ── */
+.cta-form-inline{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;max-width:600px;margin:0 auto 24px;text-align:left;}
+.cta-form-inline .full{grid-column:1/-1;}
+
+/* ── FOOTER STRIP ── */
+
+@media(max-width:900px){
+  .container{padding:0 24px;}
+  .agg-grid{grid-template-columns:repeat(3,1fr);}
+  .cs-header{grid-template-columns:1fr;gap:24px;}
+  .cs-badges{flex-direction:row;flex-wrap:wrap;}
+  .cs-metrics{grid-template-columns:1fr 1fr;}
+  .cs-detail{grid-template-columns:1fr;}
+  .prov-grid{grid-template-columns:1fr;gap:40px;}
+  .method-grid{grid-template-columns:1fr;}
+  .cta-form-inline{grid-template-columns:1fr;}
+  .nav-back{display:none;}
+  .nav-hamburger{display:flex;}
+  }
+@media(max-width:540px){
+  .agg-grid{grid-template-columns:1fr 1fr;}
+  .cs-metrics{grid-template-columns:1fr;}
+  .cs-header,.cs-detail{padding:32px 24px;}
+  .cs-metric{padding:20px 24px;}
+  section{padding:72px 0;}
+}
+.cert { padding:8px 18px; border:1px solid rgba(255,255,255,0.12); font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
+/* ══════════════════════════════════════════
+   FOOTER (shared)
+   ══════════════════════════════════════════ */
+footer { background:var(--navy-mid); padding:80px 48px 40px; }
+.foot-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:60px; margin-bottom:60px; }
+.foot-logo { font-size:16px; font-weight:900; letter-spacing:.22em; margin-bottom:14px; }
+.foot-tag { font-size:13px; color:var(--text-muted); line-height:1.65; }
+.foot-col h4 { font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:20px; }
+.foot-col a { display:block; font-size:13px; color:var(--text-muted); text-decoration:none; margin-bottom:12px; transition:color .2s; }
+.foot-col a:hover { color:var(--text); }
+.foot-bot { max-width:1200px; margin:0 auto; padding-top:40px; border-top:1px solid var(--hairline); display:flex; justify-content:space-between; }
+.foot-copy { font-size:11px; color:var(--text-muted); }
+@media (max-width:820px) { .foot-grid { grid-template-columns:1fr 1fr; gap:40px; } }
+@media (max-width:480px) { .foot-grid { grid-template-columns:1fr; } .foot-bot { flex-direction:column; gap:8px; } }
+/* Legal modal */
+.legal-overlay { display:none; position:fixed; inset:0; z-index:500; background:rgba(13,19,35,0.88); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); overflow-y:auto; padding:40px 20px; }
+.legal-overlay.open { display:flex; align-items:flex-start; justify-content:center; }
+.legal-modal { background:var(--navy-card); border:1px solid var(--hairline); max-width:720px; width:100%; padding:48px 48px 56px; position:relative; margin:auto; }
+.legal-close { position:absolute; top:20px; right:24px; background:none; border:none; color:var(--text-muted); font-size:22px; cursor:pointer; line-height:1; }
+.legal-close:hover { color:var(--accent); }
+.legal-modal h2 { font-size:24px; font-weight:900; margin-bottom:8px; color:var(--text); }
+.legal-modal .legal-date { font-size:11px; color:var(--text-muted); letter-spacing:.1em; text-transform:uppercase; margin-bottom:32px; }
+.legal-modal h3 { font-size:14px; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:.12em; margin:28px 0 10px; }
+.legal-modal p, .legal-modal li { font-size:14px; color:var(--text-muted); line-height:1.75; margin-bottom:10px; }
+.legal-modal ul { padding-left:20px; }
+.legal-modal a { color:var(--accent); text-decoration:none; }
+@media(max-width:600px){ .legal-modal{ padding:32px 24px 40px; } }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="/">
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none"><defs><linearGradient id="gld" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6a4000"/><stop offset="30%" stop-color="#b87010"/><stop offset="65%" stop-color="#ffb94c"/><stop offset="100%" stop-color="#fff5cc"/></linearGradient></defs><path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z" stroke="url(#gld)" stroke-width="1.6" fill="none" stroke-linejoin="round"/><line x1="92" y1="8" x2="8" y2="92" stroke="url(#gld)" stroke-width="0.90" opacity="0.88"/><line x1="92" y1="8" x2="40" y2="92" stroke="url(#gld)" stroke-width="0.62" opacity="0.64"/><path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gld)" stroke-width="0.64" opacity="0.62"/><circle cx="92" cy="8" r="1.8" fill="#fff5cc"/></svg>
+      <span class="nav-wordmark">anymetric</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:32px;">
+      <a class="nav-back" href="/">Back to Home</a>
+      <a href="/#audit" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — Results Nav')">GET FREE AUDIT</a>
+      <button class="nav-hamburger" id="navHam" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="/" onclick="closeDrawer()">Home</a>
+  <a href="/#services" onclick="closeDrawer()">Services</a>
+  <a href="/#audit" onclick="closeDrawer()">Get Free Audit</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">anymetric</a><span>/</span>Results</p>
+    <div class="tag">What we move</div>
+    <h1 style="font-size:clamp(40px,6vw,80px);font-weight:900;line-height:.96;letter-spacing:-.03em;margin-bottom:24px;opacity:0;animation:fu .9s ease .2s forwards;">
+      The Metrics Were Public.<br><span class="grad">Our Names Were Not.</span>
+    </h1>
+    <p style="font-size:18px;color:var(--text-mid);max-width:560px;line-height:1.68;margin-bottom:48px;opacity:0;animation:fu .9s ease .35s forwards;">We spent years moving metrics at some of the world's most recognised brands. We preferred the results to the recognition — and our clients preferred it that way too.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:32px;padding:32px 0;border-top:1px solid var(--hairline);opacity:0;animation:fu 1s ease .5s forwards;">
+      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">LVMH</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">Luxury &amp; Retail</div></div>
+      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sephora</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">E-commerce</div></div>
+      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Kingfisher</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">Retail &amp; Home Improvement</div></div>
+      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Remmers</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">Industrial &amp; B2B</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGGREGATE METRICS -->
+<section style="padding:0;">
+  <div class="agg-grid">
+    <div class="agg-cell"><div class="agg-num">2×</div><div class="agg-svc">AI Personalization</div><div class="agg-lbl">Customer LTV uplift</div></div>
+    <div class="agg-cell"><div class="agg-num">+40%</div><div class="agg-svc">AI CX Agents</div><div class="agg-lbl">CSAT increase</div></div>
+    <div class="agg-cell"><div class="agg-num">+30%</div><div class="agg-svc">GEO / AEO</div><div class="agg-lbl">CR from LLM traffic</div></div>
+    <div class="agg-cell"><div class="agg-num">−60%</div><div class="agg-svc">Agentic Automation</div><div class="agg-lbl">Ops cost reduction</div></div>
+    <div class="agg-cell"><div class="agg-num">3×</div><div class="agg-svc">AI Product Build</div><div class="agg-lbl">Faster time-to-market</div></div>
+    <div class="agg-cell"><div class="agg-num">−75%</div><div class="agg-svc">AI Analytics</div><div class="agg-lbl">Reporting time saved</div></div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section>
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Case studies</div>
+      <h2 style="font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;">Before &amp; After.<br><span class="grad">No Slide Decks.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">Three problems, three service types, three very different businesses. The pattern is the same: a measurable metric, an agreed target, a delivered result. Industry noted for context — the approach transfers.</p>
+    </div>
+    <div class="cs-grid">
+
+      <!-- CS 01 -->
+      <div class="cs-card">
+        <div class="cs-header">
+          <div>
+            <div class="cs-meta-industry">Retention &amp; LTV · AI Product Build</div>
+            <div class="cs-title">Repeat Purchase Rate Nearly Doubled. First-Time Buyers Became Regulars.</div>
+            <p class="cs-summary">A mid-market e-commerce business had the traffic and the product — but customers were not coming back. AI-powered recommendation and retention pipeline identified the drop-off point and closed it in 6 weeks.</p>
+          </div>
+          <div></div>
+          <div class="cs-badges">
+            <div class="cs-badge">AI Product Build</div>
+            <div class="cs-badge">6 Weeks</div>
+          </div>
+        </div>
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <div class="cs-metric-label">Repeat Purchase Rate</div>
+            <div class="cs-metric-before">Before: 18%</div>
+            <div class="cs-metric-after">34%</div>
+            <div class="cs-metric-delta">↑ +89%</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-label">Customer LTV (12-month)</div>
+            <div class="cs-metric-before">Before: €142</div>
+            <div class="cs-metric-after">€267</div>
+            <div class="cs-metric-delta">↑ +88%</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-label">Email Revenue Attribution</div>
+            <div class="cs-metric-before">Before: 12%</div>
+            <div class="cs-metric-after">28%</div>
+            <div class="cs-metric-delta">↑ +133%</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-label">Time to Production</div>
+            <div class="cs-metric-before">Estimated: 4 months</div>
+            <div class="cs-metric-after">6 weeks</div>
+            <div class="cs-metric-delta">3× faster</div>
+          </div>
+        </div>
+        <div class="cs-detail">
+          <div class="cs-detail-section">
+            <h4>What we built</h4>
+            <ul>
+              <li>RAG-powered product recommendation engine trained on purchase and browse history</li>
+              <li>AI-driven post-purchase retention email sequence (7-step, adaptive)</li>
+              <li>Churn prediction model with automated reactivation triggers</li>
+              <li>Real-time personalisation layer on product listing pages</li>
+            </ul>
+          </div>
+          <div class="cs-detail-section">
+            <h4>How we measured</h4>
+            <ul>
+              <li>Baseline established from 90-day pre-engagement analytics</li>
+              <li>A/B test — personalised vs. control cohorts, 60-day run</li>
+              <li>LTV measured at 12-month projection from verified cohort data</li>
+              <li>Email attribution via UTM tracking in client's existing ESP</li>
+            </ul>
+            <p class="cs-timeline">Timeline: <strong>6 weeks to deployment</strong> · Guarantee: repeat purchase rate ↑ 40%+ · Delivered: ↑ 89%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CS 02 -->
+      <div class="cs-card" style="background:var(--navy-lo);">
+        <div class="cs-header">
+          <div>
+            <div class="cs-meta-industry">Data Sovereignty · On-Premise AI</div>
+            <div class="cs-title">On-Premise AI Cuts Document Review Time by 71% Without Cloud Exposure</div>
+            <p class="cs-summary">A legal services firm needed AI-assisted document analysis but couldn't use cloud APIs due to client confidentiality obligations. Fully on-premise RAG system deployed on existing infrastructure.</p>
+          </div>
+          <div></div>
+          <div class="cs-badges">
+            <div class="cs-badge">On-Premise AI</div>
+            <div class="cs-badge">5 Weeks</div>
+          </div>
+        </div>
+        <div class="cs-metrics">
+          <div class="cs-metric" style="background:var(--navy-lo);">
+            <div class="cs-metric-label">Document Review Time</div>
+            <div class="cs-metric-before">Before: 4.2 hrs/doc</div>
+            <div class="cs-metric-after">1.2 hrs</div>
+            <div class="cs-metric-delta">↓ −71%</div>
+          </div>
+          <div class="cs-metric" style="background:var(--navy-lo);">
+            <div class="cs-metric-label">Paralegal Capacity</div>
+            <div class="cs-metric-before">Before: 6 docs/day</div>
+            <div class="cs-metric-after">21 docs</div>
+            <div class="cs-metric-delta">↑ 3.5× throughput</div>
+          </div>
+          <div class="cs-metric" style="background:var(--navy-lo);">
+            <div class="cs-metric-label">Data Sovereignty</div>
+            <div class="cs-metric-before">Before: cloud-dependent</div>
+            <div class="cs-metric-after">100% on-prem</div>
+            <div class="cs-metric-delta">Zero external exposure</div>
+          </div>
+          <div class="cs-metric" style="background:var(--navy-lo);">
+            <div class="cs-metric-label">Ops Cost / Document</div>
+            <div class="cs-metric-before">Before: €38</div>
+            <div class="cs-metric-after">€11</div>
+            <div class="cs-metric-delta">↓ −71%</div>
+          </div>
+        </div>
+        <div class="cs-detail" style="background:var(--navy-lo);">
+          <div class="cs-detail-section">
+            <h4>What we deployed</h4>
+            <ul>
+              <li>On-premise RAG pipeline using Mistral 7B (quantized) on existing GPU server</li>
+              <li>Document ingestion pipeline for PDF, DOCX, and scanned image formats</li>
+              <li>Legal clause extraction and classification system</li>
+              <li>Precedent similarity search across historical case library</li>
+            </ul>
+          </div>
+          <div class="cs-detail-section">
+            <h4>Infrastructure</h4>
+            <ul>
+              <li>Deployed on client's existing on-premise server — no new hardware required</li>
+              <li>No API calls to any external service at any point in the pipeline</li>
+              <li>Containerised with Docker — portable and reproducible</li>
+              <li>Fully documented; client's IT team trained on maintenance</li>
+            </ul>
+            <p class="cs-timeline">Timeline: <strong>5 weeks to live deployment</strong> · All data stayed on client infrastructure throughout</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CS 03 -->
+      <div class="cs-card">
+        <div class="cs-header">
+          <div>
+            <div class="cs-meta-industry">Operational Efficiency · Agentic Automation</div>
+            <div class="cs-title">Agentic Automation Eliminates 60% of Manual Reporting Overhead</div>
+            <p class="cs-summary">A B2B SaaS company had three analysts spending 40% of their time aggregating data and generating reports that could have been running themselves. Full agentic pipeline replaced the manual workflow in 3 weeks.</p>
+          </div>
+          <div></div>
+          <div class="cs-badges">
+            <div class="cs-badge">Agentic Automation</div>
+            <div class="cs-badge">3 Weeks</div>
+          </div>
+        </div>
+        <div class="cs-metrics">
+          <div class="cs-metric">
+            <div class="cs-metric-label">Weekly Reporting Hours</div>
+            <div class="cs-metric-before">Before: 48 hrs/week</div>
+            <div class="cs-metric-after">6 hrs</div>
+            <div class="cs-metric-delta">↓ −87.5%</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-label">Report Delivery Time</div>
+            <div class="cs-metric-before">Before: Monday 14:00</div>
+            <div class="cs-metric-after">Monday 07:00</div>
+            <div class="cs-metric-delta">7 hrs earlier, automated</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-label">Data Sources Integrated</div>
+            <div class="cs-metric-before">Before: manual export</div>
+            <div class="cs-metric-after">8 sources</div>
+            <div class="cs-metric-delta">Fully automated</div>
+          </div>
+          <div class="cs-metric">
+            <div class="cs-metric-label">Analyst Capacity Released</div>
+            <div class="cs-metric-before">Before: 40% on reports</div>
+            <div class="cs-metric-after">5%</div>
+            <div class="cs-metric-delta">35% redirected to analysis</div>
+          </div>
+        </div>
+        <div class="cs-detail">
+          <div class="cs-detail-section">
+            <h4>What we automated</h4>
+            <ul>
+              <li>Multi-source data ingestion from 8 SaaS platforms via API and webhook</li>
+              <li>AI-driven anomaly detection and narrative generation layer</li>
+              <li>Automated Slack and email distribution with formatted report</li>
+              <li>Exception alert system — humans notified only when action is required</li>
+            </ul>
+          </div>
+          <div class="cs-detail-section">
+            <h4>Stack &amp; approach</h4>
+            <ul>
+              <li>Agentic pipeline in Node.js with Claude Haiku for narrative generation</li>
+              <li>Deployed on client's existing Vercel infrastructure — zero new tooling</li>
+              <li>Source code fully transferred and documented; team trained on maintenance</li>
+              <li>Total cost of engagement recovered in under 6 weeks of analyst time saved</li>
+            </ul>
+            <p class="cs-timeline">Timeline: <strong>3 weeks to full automation</strong> · ROI payback: 6 weeks</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="s-lo">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">How results are verified</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Metrics Agreed Before.<br><span class="grad">Measured After.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">We don't measure success against deliverables. We measure it against the number we agreed to move before work began.</p>
+    </div>
+    <div class="hl" style="margin-bottom:0;"></div>
+    <div class="method-grid">
+      <div class="method-item">
+        <div class="method-n">01 — BASELINE</div>
+        <div class="method-t">Agreed metric, agreed baseline</div>
+        <p class="method-d">Before any work begins, we document the current state of the target metric using the client's own analytics or agreed third-party tooling. This becomes the benchmark everything is measured against.</p>
+      </div>
+      <div class="method-item" style="background:var(--navy-lo);">
+        <div class="method-n">02 — TARGET</div>
+        <div class="method-t">Written target, written guarantee</div>
+        <p class="method-d">The improvement target is specified in the project agreement — not as a range, but as a floor. If we don't hit the floor within the agreed timeline, we continue at zero cost or issue a refund.</p>
+      </div>
+      <div class="method-item">
+        <div class="method-n">03 — MEASURE</div>
+        <div class="method-t">Same method, same tools</div>
+        <p class="method-d">Post-engagement results are measured with the identical methodology used to establish the baseline. We don't switch metrics or measurement tools mid-engagement. The number is the number.</p>
+      </div>
+    </div>
+    <div class="hl" style="margin-top:0;"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;">
+      <div>
+        <div class="tag">FAQ</div>
+        <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">Results<br><span class="grad">Questions.</span></h2>
+      </div>
+      <div>
+        <div class="faq-item open">
+          <div class="faq-q">Why are your case studies anonymized?<span class="faq-tog"></span></div>
+          <div class="faq-a">Our clients are often enterprise brands and regulated businesses where competitive advantage depends on discretion. Many explicitly request that we not reference their company or results publicly. We respect that — the results speak for themselves without the name attached. For white-label work, NDA terms make attribution impossible by design.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How are the metric improvements verified?<span class="faq-tog"></span></div>
+          <div class="faq-a">Every engagement begins with an agreed baseline metric and a documented measurement methodology. Improvements are verified against the same methodology used to establish the baseline — client analytics, CRM data, or agreed third-party measurement tools. We do not present estimated or projected figures as results.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I speak with a previous client?<span class="faq-tog"></span></div>
+          <div class="faq-a">For engagements where the client has consented to serve as a reference, we can arrange an introduction. This is the exception rather than the rule given our discretion-first approach. Request this specifically in your audit form and we will check whether a reference introduction is possible for your specific industry and use case.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you only work with large enterprise clients?<span class="faq-tog"></span></div>
+          <div class="faq-a">No. The case studies shown include mid-market businesses (€5M–€50M revenue) as well as enterprise engagements. Our CEE-market pricing makes senior-calibre AI PM work accessible to businesses that would typically be priced out of equivalent Western European consultancy. The majority of our active engagements are with growth-stage businesses and founder-led companies.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="s-mid" id="audit">
+  <div class="container">
+    <div style="text-align:center;max-width:660px;margin:0 auto;">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid rgba(255,185,76,0.25);font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.1em;margin-bottom:32px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#4caf50;animation:pulse 2s ease-in-out infinite;"></span>
+        ASYNC FIRST — No call required
+      </div>
+      <div class="tag">Start here</div>
+      <h2 style="font-size:clamp(28px,4vw,52px);font-weight:900;line-height:1.05;margin-bottom:18px;">Your Metrics<br><span class="grad">Could Be Next.</span></h2>
+      <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Submit your challenge. We'll return a personalised analysis of your top 3 revenue opportunities within 48 hours. No obligation, no sales pitch.</p>
+      <form class="cta-form-inline" name="results-audit" method="POST">
+        <input type="hidden" name="form-name" value="results-audit">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>
+        <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>
+        <div><label class="fl">Company</label><input type="text" name="company" placeholder="Your company"></div>
+        <div><label class="fl">Industry</label><input type="text" name="industry" placeholder="E-commerce / SaaS / Legal..."></div>
+        <div class="full"><label class="fl">The metric you most want to move</label><textarea name="challenge" rows="2" placeholder="E.g. Our repeat purchase rate is stuck at 15%. We have the traffic — we're losing people after first order." style="min-height:70px;"></textarea></div>
+        <div class="full" style="text-align:center;">
+          <button type="submit" class="btn-p" style="width:100%;max-width:340px;" onclick="plausible('Results Page Audit Submit')">GET MY FREE AUDIT →</button>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">Answered by a senior AI PM within 48 hours. A call only if you want one.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>@keyframes pulse{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.2)}}</style>
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const i=q.parentElement,o=i.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));
+    if(!o)i.classList.add('open');
+  });
+});
+const ham=document.getElementById('navHam');
+const drawer=document.getElementById('navDrawer');
+ham.addEventListener('click',()=>{
+  const open=drawer.classList.toggle('open');
+  ham.classList.toggle('open',open);
+  ham.setAttribute('aria-expanded', open);
+  document.body.style.overflow=open?'hidden':'';
+});
+function closeDrawer(){
+  drawer.classList.remove('open');ham.classList.remove('open');
+  ham.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))closeDrawer();},{passive:true});
+</script>
+<script>
+/* ════════════════════════════════════════════════
+   UNIVERSAL FORM HANDLER
+   Wires all forms to a backend endpoint.
+   Configure ONE variable below, and every form submits there.
+
+   OPTION A (Supabase - recommended, matches your stack):
+     Set FORM_ENDPOINT to your Supabase REST endpoint
+     e.g. "https://xxxx.supabase.co/rest/v1/leads"
+     + uncomment the apikey/Prefer headers below
+
+   OPTION B (Formspree - 50/mo free, zero-setup):
+     Set FORM_ENDPOINT to your Formspree URL
+     e.g. "https://formspree.io/f/xxxxxxxx"
+
+   OPTION C (Leave as-is during testing):
+     Forms show confirmation but do not persist.
+     Good for visual QA before wiring backend.
+   ════════════════════════════════════════════════ */
+
+const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready
+
+document.querySelectorAll("form[name]").forEach(form => {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector("button[type=submit]");
+    const originalText = btn ? btn.textContent : "";
+    if (btn) { btn.disabled = true; btn.textContent = "SENDING…"; }
+
+    const data = Object.fromEntries(new FormData(form));
+    data.form_source = form.getAttribute("name");
+    data.submitted_at = new Date().toISOString();
+    data.page = window.location.pathname;
+
+    try {
+      if (FORM_ENDPOINT) {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Uncomment for Supabase:
+            // "apikey": "YOUR_SUPABASE_ANON_KEY",
+            // "Authorization": "Bearer YOUR_SUPABASE_ANON_KEY",
+            // "Prefer": "return=minimal"
+          },
+          body: JSON.stringify(data)
+        });
+        if (!res.ok) throw new Error("Submit failed: " + res.status);
+      } else {
+        // No backend wired yet — log locally and continue so testing still works
+        console.log("[Form submission — no endpoint configured]", data);
+        await new Promise(r => setTimeout(r, 600));
+      }
+
+      if (typeof plausible === "function") {
+        plausible("Form Submit Success", { props: { form: data.form_source } });
+      }
+      form.innerHTML = `<div style="padding:40px 0;text-align:center;">
+        <div style="font-size:32px;margin-bottom:16px;">✓</div>
+        <div style="font-size:18px;font-weight:700;margin-bottom:8px;">Got it. A senior AI PM will respond within 48 hours.</div>
+        <div style="font-size:13px;color:var(--text-muted);">Check your inbox — including spam, just in case.</div>
+      </div>`;
+    } catch (err) {
+      console.error(err);
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
+      alert("Something went wrong. Please try again or email hello@anymetric.ai");
+    }
+  });
+});
+</script>
+<!-- FOOTER (shared across all pages) -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:14px;">
+        <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="gldFoot" x1="8" y1="92" x2="92" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6a4000"/><stop offset="30%" stop-color="#b87010"/><stop offset="65%" stop-color="#ffb94c"/><stop offset="100%" stop-color="#fff5cc"/></linearGradient></defs>
+          <path d="M92 8 L92 92 L8 92 C 38 92 72 58 92 8 Z" stroke="url(#gldFoot)" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+          <line x1="92" y1="8" x2="8"  y2="92" stroke="url(#gldFoot)" stroke-width="0.90" opacity="0.88"/>
+          <line x1="92" y1="8" x2="24" y2="92" stroke="url(#gldFoot)" stroke-width="0.75" opacity="0.75"/>
+          <line x1="92" y1="8" x2="40" y2="92" stroke="url(#gldFoot)" stroke-width="0.62" opacity="0.64"/>
+          <line x1="92" y1="8" x2="56" y2="92" stroke="url(#gldFoot)" stroke-width="0.52" opacity="0.54"/>
+          <line x1="92" y1="8" x2="72" y2="92" stroke="url(#gldFoot)" stroke-width="0.42" opacity="0.42"/>
+          <line x1="75" y1="24" x2="92" y2="24" stroke="url(#gldFoot)" stroke-width="0.68" opacity="0.65"/>
+          <line x1="63" y1="38" x2="92" y2="38" stroke="url(#gldFoot)" stroke-width="0.60" opacity="0.57"/>
+          <line x1="53" y1="52" x2="92" y2="52" stroke="url(#gldFoot)" stroke-width="0.52" opacity="0.50"/>
+          <line x1="40" y1="66" x2="92" y2="66" stroke="url(#gldFoot)" stroke-width="0.44" opacity="0.42"/>
+          <path d="M70 92 A22 22 0 0 0 92 70" fill="none" stroke="url(#gldFoot)" stroke-width="0.72" opacity="0.70"/>
+          <path d="M54 92 A38 38 0 0 0 92 54" fill="none" stroke="url(#gldFoot)" stroke-width="0.64" opacity="0.62"/>
+          <path d="M38 92 A54 54 0 0 0 92 38" fill="none" stroke="url(#gldFoot)" stroke-width="0.56" opacity="0.54"/>
+          <path d="M22 92 A70 70 0 0 0 92 22" fill="none" stroke="url(#gldFoot)" stroke-width="0.48" opacity="0.44"/>
+          <path d="M10 92 A83 83 0 0 0 92 10" fill="none" stroke="url(#gldFoot)" stroke-width="0.40" opacity="0.34"/>
+          <circle cx="92" cy="8" r="1.8" fill="#fff5cc"/>
+        </svg>
+        <span style="font-weight:300;font-size:14px;letter-spacing:0.08em;">anymetric</span>
+      </div>
+      <p class="foot-tag">The product revenue lab that moves<br>your metrics and guarantees the result.</p>
+      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+        <div class="cert">AI Product Academy</div>
+        <div class="cert">Maven</div>
+        <div class="cert">DeepLearning.AI</div>
+      </div>
+    </div>
+    <div class="foot-col"><h4>Services</h4><a href="/geo-aeo-optimization">GEO &amp; AEO Optimization</a><a href="/#services">Voice AI Agent</a><a href="/#services">Agentic Automation</a><a href="/#services">AI Product Build</a><a href="/#services">AI Audit &amp; Strategy</a><a href="/on-premise-ai">On-Premise AI</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="/results">Results</a><a href="/#protocol">Our Approach</a><a href="/#playbook">Playbook</a><a href="/white-label">White Label</a></div>
+    <div class="foot-col"><h4>Start</h4><a href="/#audit">Get Free Audit</a><a href="/#audit">Send Your Challenge</a><a href="/white-label">White Label Enquiry</a></div>
+  </div>
+  <div class="foot-bot">
+    <div class="foot-copy">© 2026 anymetric. Metric-obsessed. Confidential by design.</div>
+    <div class="foot-copy">
+      <a href="javascript:void(0)" onclick="openLegal('privacy')" style="color:var(--text-muted);text-decoration:none;">Privacy Policy</a>
+      &nbsp;·&nbsp;
+      <a href="javascript:void(0)" onclick="openLegal('terms')" style="color:var(--text-muted);text-decoration:none;">Terms of Service</a>
+      &nbsp;·&nbsp;
+      <a href="javascript:void(0)" onclick="openLegal('cookies')" style="color:var(--text-muted);text-decoration:none;">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LEGAL MODAL -->
+<div class="legal-overlay" id="legalOverlay" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+  <div class="legal-modal" id="legalModal">
+    <button class="legal-close" onclick="closeLegal()" aria-label="Close">×</button>
+    <div id="legalContent"></div>
+  </div>
+</div>
+
+<script>
+const legalDocs = {
+  privacy: `
+    <h2>Privacy Policy</h2>
+    <div class="legal-date">Effective date: 1 April 2026</div>
+    <p>anymetric ("we", "us", "our") is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and applicable data protection laws.</p>
+    <h3>1. Data we collect</h3>
+    <p>When you submit an audit request or download our playbook, we collect: your name, work email address, company name, job title, and the challenge description you provide. We do not collect payment data, cookies, or tracking identifiers beyond what is described below.</p>
+    <h3>2. Analytics</h3>
+    <p>This website uses <strong>Plausible Analytics</strong>, a privacy-first, cookieless analytics service that does not collect personal data, does not use cookies, and is fully GDPR-compliant. No consent banner is required. Plausible processes aggregate, anonymised traffic data only.</p>
+    <h3>3. How we use your data</h3>
+    <p>Form submissions are used solely to prepare and deliver your personalised audit or requested content. We do not sell, rent, or share your data with third parties. We do not add you to marketing lists without explicit consent.</p>
+    <h3>4. Data retention</h3>
+    <p>Enquiry data is retained for 24 months from the date of submission, or until you request deletion, whichever is earlier.</p>
+    <h3>5. Your rights (GDPR)</h3>
+    <p>You have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact us at <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a>.</p>
+    <h3>6. Data controller</h3>
+    <p>anymetric, Novi Sad, Serbia. Contact: <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a></p>
+  `,
+  terms: `
+    <h2>Terms of Service</h2>
+    <div class="legal-date">Effective date: 1 April 2026</div>
+    <p>By accessing anymetric.ai or engaging our services, you agree to the following terms.</p>
+    <h3>1. Services</h3>
+    <p>anymetric provides AI product consultancy, GEO optimization, automation, and AI product development services. Specific deliverables, timelines, and fees are defined in individual project agreements.</p>
+    <h3>2. Free audit</h3>
+    <p>The free audit is a no-obligation diagnostic. Submission of an audit request does not constitute a contract or commitment of any kind on either party's part.</p>
+    <h3>3. Satisfaction guarantee</h3>
+    <p>Where a satisfaction guarantee is offered, it applies to the specific metric target agreed in writing before work begins. Guarantee terms are defined in the project agreement and do not apply to preliminary audits or free deliverables.</p>
+    <h3>4. Intellectual property</h3>
+    <p>All deliverables, source code, and documentation produced under a paid engagement are transferred to the client upon final payment, unless otherwise agreed in writing.</p>
+    <h3>5. Confidentiality</h3>
+    <p>We treat all client information as confidential by default. We will not reference your company, project, or results publicly without explicit written consent.</p>
+    <h3>6. Limitation of liability</h3>
+    <p>Our liability is limited to the fees paid for the specific engagement in question. We are not liable for indirect, consequential, or speculative losses.</p>
+    <h3>7. Governing law</h3>
+    <p>These terms are governed by the laws of the Republic of Serbia. Disputes will be resolved by the competent court in Novi Sad.</p>
+    <h3>8. Contact</h3>
+    <p><a href="mailto:hello@anymetric.ai">hello@anymetric.ai</a></p>
+  `,
+  cookies: `
+    <h2>Cookie Policy</h2>
+    <div class="legal-date">Effective date: 1 April 2026</div>
+    <p>anymetric.ai does not use tracking cookies, advertising cookies, or any third-party cookies that require consent under GDPR or the ePrivacy Directive.</p>
+    <h3>Analytics</h3>
+    <p>We use <strong>Plausible Analytics</strong>, which operates without cookies and without collecting personal data. Plausible is a cookieless, privacy-first analytics solution. No consent is required for its use.</p>
+    <h3>Form submissions</h3>
+    <p>Form submissions are processed by <strong>Supabase</strong>, which stores your submission in an encrypted database. No cookies are set by the form submission process. Submitted data is used solely to respond to your enquiry.</p>
+    <h3>Session recordings</h3>
+    <p>We use <strong>Microsoft Clarity</strong> to understand how visitors interact with the site. Clarity sets functional cookies to aggregate session data; no personally identifying information is collected. You may opt out via your browser's cookie settings.</p>
+    <h3>Contact</h3>
+    <p>Questions about our data practices: <a href="mailto:privacy@anymetric.ai">privacy@anymetric.ai</a></p>
+  `
+};
+
+function openLegal(doc){
+  document.getElementById('legalContent').innerHTML = legalDocs[doc];
+  document.getElementById('legalOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLegal(){
+  document.getElementById('legalOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('legalOverlay').addEventListener('click',function(e){
+  if(e.target===this) closeLegal();
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') closeLegal();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-XSS-Protection: 1; mode=block
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://*.clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io https://*.clarity.ms https://*.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://*.supabase.co
+
+# ── CSP extension guide (for future work) ───────────────────────────────
+# If adding a chatbot widget (Intercom, Crisp, custom n8n webhook):
+#   → append its origin to script-src, connect-src, and frame-src if it iframes.
+# If embedding video (YouTube, Vimeo, Loom):
+#   → add frame-src https://www.youtube.com https://player.vimeo.com etc.
+# If moving forms off Supabase (Formspree, Basin):
+#   → swap https://*.supabase.co in connect-src AND form-action.
+# If serving a pixel (Meta, LinkedIn, Reddit ads):
+#   → add the pixel origin to script-src AND img-src.
+# 'unsafe-inline' is retained because inline <style>, inline <script>, and
+# onclick= handlers are used throughout the site. Removing it would require
+# moving all inline CSS/JS to external files + nonce injection — not worth
+# the refactor cost for a 5-page static site.
