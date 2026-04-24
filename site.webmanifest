@@ -1,0 +1,21 @@
+{
+  "name": "anymetric — AI Product Revenue Lab",
+  "short_name": "anymetric",
+  "description": "AI products with outcome guaranteed. We find revenue bottlenecks and fix fast — voice & chat agents, agentic automation, AEO/GEO, analytics, team workflows.",
+  "icons": [
+    {
+      "src": "/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0d1323",
+  "background_color": "#0d1323",
+  "display": "standalone",
+  "start_url": "/"
+}
