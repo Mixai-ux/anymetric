@@ -156,6 +156,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 
 /* ── FOOTER STRIP ── */
 
+/* 2-col inline grid (replaces inline style for mobile override-ability) */
+.inline-2col { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
+.inline-2col-even { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+
 @media(max-width:900px){
   .container{padding:0 24px;}
   .agg-grid{grid-template-columns:repeat(3,1fr);}
@@ -204,6 +208,70 @@ footer { background:var(--navy-mid); padding:80px 48px 40px; }
 .legal-modal ul { padding-left:20px; }
 .legal-modal a { color:var(--accent); text-decoration:none; }
 @media(max-width:600px){ .legal-modal{ padding:32px 24px 40px; } }
+
+/* ══════════════════════════════════════════
+   MOBILE-FIRST OVERLAY (subpage)
+   Appended to end of the style block to guarantee cascade wins.
+   ══════════════════════════════════════════ */
+html, body { max-width:100%; overflow-x:hidden; }
+
+/* Nav hamburger kicks in earlier for tablet landscape */
+@media (max-width:1024px) {
+  .nav-back { display:none !important; }
+  .nav-hamburger { display:flex !important; }
+}
+
+/* Mobile tightening ≤768px */
+@media (max-width:768px) {
+  nav { padding:0 0 0 20px !important; }
+  .nav-in { padding-right:20px !important; height:60px !important; }
+  .nav-wordmark { font-size:15px !important; }
+  .container { padding:0 20px !important; }
+  section { padding:64px 0 !important; }
+
+  /* Nav button inside right-side flex: shrink */
+  .nav-in > div:last-child { gap:16px !important; }
+  .nav-in .btn-p { font-size:10px !important; padding:10px 14px !important; }
+
+  /* Hero typography */
+  .hero { padding:110px 0 72px !important; min-height:auto !important; }
+  h1, .hero-h1 { font-size:clamp(36px, 10vw, 58px) !important; line-height:0.98 !important; }
+
+  /* All multi-column grids collapse to single column when they haven't already */
+  .inline-2col, .inline-2col-even, .why-grid, .uc-grid, .stack-grid, .process-grid, .hw-grid, .cta-form-inline,
+  .agg-grid, .cs-header, .cs-metrics, .cs-detail, .prov-grid, .method-grid,
+  .how-grid, .deliver-grid, .dlv-row, .commit-grid, .fit-grid, .pricing-grid,
+  .geo-explain, .process-steps, .deliverables-grid, .engines-grid, .signals-grid, .proof-grid {
+    grid-template-columns:1fr !important;
+  }
+
+  /* Grids that used 1px hairline background (creates subtle divider effect on desktop) —
+     on mobile, that single-column collapse plus background-gap works fine, no changes needed */
+
+  /* Footer: 2 cols at this breakpoint */
+  .foot-grid { grid-template-columns:1fr 1fr !important; gap:32px !important; }
+  footer { padding:60px 20px 32px !important; }
+  .foot-bot { flex-direction:column !important; gap:12px !important; align-items:flex-start !important; }
+}
+
+/* Small phones ≤480px */
+@media (max-width:480px) {
+  .container { padding:0 16px !important; }
+  nav { padding:0 0 0 16px !important; }
+  .nav-in { padding-right:16px !important; }
+  section { padding:56px 0 !important; }
+  h1, .hero-h1 { font-size:clamp(32px, 10.5vw, 46px) !important; }
+
+  /* Footer fully stacked */
+  .foot-grid { grid-template-columns:1fr !important; gap:24px !important; }
+  footer { padding:48px 16px 28px !important; }
+
+  /* Reduce cell paddings that were desktop-sized */
+  .pstep, .uc, .stack-item, .process-step, .hw, .cs-detail, .deliver-col,
+  .commit-col, .method-col, .how-col, .pricing-col, .fit-col {
+    padding:28px 20px !important;
+  }
+}
 
 </style>
 </head>
@@ -494,7 +562,7 @@ footer { background:var(--navy-mid); padding:80px 48px 40px; }
 <!-- FAQ -->
 <section>
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;">
+    <div class="inline-2col">
       <div>
         <div class="tag">FAQ</div>
         <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">Results<br><span class="grad">Questions.</span></h2>

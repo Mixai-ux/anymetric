@@ -60,6 +60,15 @@ images/                     → og-image.png (1200×630px) + logo.svg MISSING �
 
 ## Changelog
 
+### April 2026 — Mobile-first sprint
+- **Root-cause bug fixed in `index.html`.** The two mobile `@media` blocks were placed *before* the desktop rules in source order, so every mobile override was silently losing the cascade. Symptom: nav links visible at phone widths, services grid stuck 2-col, protocol crushed to 5-col, FAQ 2-col with overlapping text, "+40%" clipped to "+40" in metrics grid. Relocated mobile queries to the end of the `<style>` block where they win the cascade.
+- **Breakpoints restructured.** Was 820 / 480 (2 stops, desktop-first). Now 1024 / 768 / 480 (3 stops, mobile-first overlay). Tablet layer collapses 5-col → 2-col; phone layer goes full single-column.
+- **Horizontal overflow locked.** `html, body { max-width:100%; overflow-x:hidden }` everywhere. The 260px-wide `.wave-b` decorative elements (520px of fixed content on a 380px screen) are now `display:none` below 768px.
+- **Inline `grid-template-columns` trap extracted.** FAQ wrappers on all 4 subpages had `style="grid-template-columns:1fr 2fr"` inline, which beats external CSS on specificity. Replaced with `.inline-2col` / `.inline-2col-even` class hooks so media queries can reach them.
+- **Hamburger nav works end-to-end.** `.nav-ul`, `.lang`, `.nav-r > .btn-p` all hide below 1024px; `.nav-hamburger` shows. Nav padding / logo size / wordmark size scale down at phone widths.
+- **Typography and spacing rescaled per breakpoint.** Hero H1 clamps tighter on narrow phones, hero padding 140→110→96px, section padding 100→64→56px, container padding 48→32→20→16px, button tap targets preserved.
+- **Verified.** Automated Playwright smoke test at 375 / 393 / 430 viewport widths × 5 pages = 15/15 pass, zero horizontal overflow, nav correctly hidden on all combinations.
+
 ### April 2026 — Launch sprint
 - **Footer unified across all 5 pages.** Service pages previously had a stripped-down one-line `.foot-strip`; they now use the same 4-column `<footer>` + legal modal as index.html.
 - **Legal modal ported to all subpages.** Privacy Policy, Terms of Service, and Cookie Policy are now reachable from every page footer.

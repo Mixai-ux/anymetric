@@ -244,47 +244,6 @@ select option { background:var(--navy-card); color:var(--text); }
 .nav-drawer a:hover { color:var(--accent); }
 .nav-drawer .drawer-cta { margin-top:24px; text-align:center; font-size:12px; }
 
-@media (max-width:820px) {
-  .nav-ul { display:none; }
-  .lang  { display:none; }
-  .nav-r > .btn-p { display:none; }
-  .nav-hamburger { display:flex; }
-  .container { padding:0 24px; }
-  .audit-grid { grid-template-columns:1fr; gap:48px; }
-  .metrics-grid { grid-template-columns:1fr 1fr; }
-  .mc:nth-child(2n) { border-right:none; }
-  .mc:nth-child(3n) { border-right:1px solid var(--hairline); }
-  .mc:nth-child(even) { border-right:none !important; }
-  .svc-grid { grid-template-columns:1fr; }
-  .svc { border-right:none; }
-  .why-grid { grid-template-columns:1fr; gap:40px; }
-  .why-h { position:static; }
-  .proto-grid { grid-template-columns:1fr; }
-  .ps { border-right:none; border-bottom:1px solid var(--hairline); }
-  .ps:last-child { border-bottom:none; }
-  .lm-grid { grid-template-columns:1fr; gap:48px; }
-  .cta-form { grid-template-columns:1fr; }
-  .faq-grid { grid-template-columns:1fr; gap:40px; }
-  .faq-h { position:static; }
-  .foot-grid { grid-template-columns:1fr 1fr; gap:40px; }
-  .stat-row { gap:32px; }
-  .hero-ctas { flex-direction:column; }
-  .hero-ctas .btn-p, .hero-ctas .btn-g { text-align:center; }
-  .form-grid { grid-template-columns:1fr; }
-  .creds-in { padding:0 8px; }
-  .logo-strip { gap:28px; }
-  .why-item { grid-template-columns:80px 1fr; }
-}
-
-@media (max-width:480px) {
-  .metrics-grid { grid-template-columns:1fr; }
-  .mc { border-right:none; }
-  .foot-grid { grid-template-columns:1fr; }
-  .foot-bot { flex-direction:column; gap:8px; }
-  section { padding:72px 0; }
-  .hero-h1 { font-size:clamp(40px,12vw,72px); }
-}
-
 /* ── Section rhythm ── */
 section { padding:100px 0; position:relative; overflow:clip; }
 /* overflow:clip blocks paint overflow without creating a scroll container,
@@ -568,6 +527,144 @@ footer { background:var(--navy-mid); padding:80px 48px 40px; }
 .foot-col a:hover { color:var(--text); }
 .foot-bot { max-width:1200px; margin:0 auto; padding-top:40px; border-top:1px solid var(--hairline); display:flex; justify-content:space-between; }
 .foot-copy { font-size:11px; color:var(--text-muted); }
+
+
+/* ══════════════════════════════════════════
+   MOBILE-FIRST OVERLAY
+   Placed at end of the style block to guarantee cascade wins over earlier desktop rules.
+   Breakpoints:
+     ≤1024px — tablet hamburger, grids collapse to 2-col
+     ≤768px  — full single-column mobile
+     ≤480px  — small-phone tightening (iPhone SE, 13 mini)
+   ══════════════════════════════════════════ */
+
+/* Global safety: prevent any rogue wide element from creating horizontal scroll.
+   The fixed .wave-b decorations (260px each side) were the main offender.
+   max-width:100% + overflow-x:hidden kills that without affecting sticky positioning
+   because neither html nor body was acting as a sticky ancestor. */
+html, body { max-width:100%; overflow-x:hidden; }
+
+/* --- TABLET & BELOW (≤1024px): nav collapses to hamburger, wide grids start breaking --- */
+@media (max-width:1024px) {
+  .nav-ul { display:none !important; }
+  .lang  { display:none !important; }
+  .nav-r > .btn-p { display:none !important; }
+  .nav-hamburger { display:flex !important; }
+  .container { padding:0 32px; }
+
+  .proto-grid { grid-template-columns:repeat(2,1fr); }
+  .ps { border-right:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+  .ps:nth-child(2n) { border-right:none; }
+
+  .metrics-grid { grid-template-columns:repeat(2,1fr); }
+  .mc { border-right:1px solid var(--hairline); }
+  .mc:nth-child(2n) { border-right:none; }
+
+  .faq-grid { gap:48px; }
+}
+
+/* --- MOBILE (≤768px): full single-column collapse --- */
+@media (max-width:768px) {
+  /* Nav: already hamburger from 1024 rule, but tighten padding */
+  nav { padding:0 0 0 20px !important; }
+  .nav-in { padding-right:20px !important; height:60px !important; }
+  .nav-wordmark { font-size:15px !important; }
+  .nav-mark { width:28px !important; height:28px !important; }
+
+  /* Container: narrow phones need tight padding */
+  .container { padding:0 20px; }
+
+  /* Decorative side waves cause horizontal overflow on mobile (260px each × 2 > viewport).
+     Hide entirely — they're purely decorative and desktop-only visual flourish. */
+  .wave-b { display:none !important; }
+
+  /* Hero: tighter padding, tuned typography */
+  .hero { padding:110px 0 72px !important; min-height:auto; }
+  .hero-h1 { font-size:clamp(40px, 11vw, 64px) !important; line-height:0.98 !important; }
+  .hero-sub { font-size:16px !important; margin-bottom:36px !important; }
+  .hero-ctas { flex-direction:column !important; gap:12px; margin-bottom:56px !important; }
+  .hero-ctas .btn-p, .hero-ctas .btn-g { text-align:center; width:100%; }
+  .eyebrow { font-size:10px !important; letter-spacing:0.26em !important; margin-bottom:24px !important; }
+
+  /* Hero stat-row: stack into 2×2 grid instead of flex-wrap chaos */
+  .stat-row { display:grid !important; grid-template-columns:1fr 1fr !important; gap:28px 20px !important; padding-top:36px !important; }
+  .stat-num { font-size:34px !important; }
+  .stat-label { font-size:10px !important; line-height:1.4; }
+
+  /* Section rhythm */
+  section { padding:64px 0 !important; }
+  .sec-head { margin-bottom:40px !important; }
+
+  /* ALL major grids collapse to single column */
+  .audit-grid { grid-template-columns:1fr !important; gap:40px !important; }
+  .svc-grid { grid-template-columns:1fr !important; }
+  .svc { border-right:none !important; padding:40px 24px !important; }
+  .why-grid { grid-template-columns:1fr !important; gap:36px !important; }
+  .why-h { position:static !important; }
+  .why-item { grid-template-columns:64px 1fr !important; gap:16px !important; padding:24px 0 !important; }
+  .proto-grid { grid-template-columns:1fr !important; }
+  .ps { border-right:none !important; border-bottom:1px solid var(--hairline) !important; padding:32px 24px !important; }
+  .ps:last-child { border-bottom:none !important; }
+  .lm-grid { grid-template-columns:1fr !important; gap:40px !important; }
+  .cta-form { grid-template-columns:1fr !important; gap:16px !important; }
+  .form-grid { grid-template-columns:1fr !important; }
+  .faq-grid { grid-template-columns:1fr !important; gap:32px !important; }
+  .faq-h { position:static !important; }
+
+  /* Metrics grid: 2×2 is the sweet spot on phones — single column wastes space with these
+     short numeric values */
+  .metrics-grid { grid-template-columns:1fr 1fr !important; }
+  .mc { padding:32px 20px !important; border-right:1px solid var(--hairline) !important; border-bottom:1px solid var(--hairline) !important; }
+  .mc:nth-child(2n) { border-right:none !important; }
+  .mc .stat-num, .mc > div:first-child { font-size:32px !important; }
+
+  /* Credibility logo strip */
+  .creds-in { padding:0 4px !important; }
+  .logo-strip { gap:24px !important; margin:32px 0 !important; }
+
+  /* Footer — 2 cols on mobile (looks balanced with 4 columns of info) */
+  .foot-grid { grid-template-columns:1fr 1fr !important; gap:32px !important; padding:0 !important; }
+  footer { padding:60px 20px 32px !important; }
+  .foot-bot { flex-direction:column !important; gap:12px !important; align-items:flex-start !important; text-align:left !important; }
+
+  /* Legal modal — already 600px breakpoint exists, reinforce */
+  .legal-modal { padding:28px 20px 36px !important; }
+}
+
+/* --- SMALL PHONES (≤480px): iPhone SE, 13 mini, narrow Androids --- */
+@media (max-width:480px) {
+  .container { padding:0 16px; }
+  nav { padding:0 0 0 16px !important; }
+  .nav-in { padding-right:16px !important; }
+
+  .hero { padding:96px 0 56px !important; }
+  .hero-h1 { font-size:clamp(36px, 11.5vw, 52px) !important; }
+  .hero-sub { font-size:15px !important; }
+
+  /* Stats stack completely single-column on narrow phones — 2-col cramps the numbers */
+  .stat-row { grid-template-columns:1fr !important; gap:24px !important; padding-top:32px !important; }
+  .stat-num { font-size:32px !important; }
+
+  /* Metrics grid also single-col — "+40%" needs room to breathe */
+  .metrics-grid { grid-template-columns:1fr !important; }
+  .mc { border-right:none !important; padding:28px 16px !important; }
+
+  /* Footer 1-column on smallest phones */
+  .foot-grid { grid-template-columns:1fr !important; gap:28px !important; }
+  footer { padding:48px 16px 28px !important; }
+
+  /* Section breathing room */
+  section { padding:56px 0 !important; }
+  .sec-head { margin-bottom:32px !important; }
+
+  /* Tighten protocol & why-item spacing */
+  .ps { padding:28px 20px !important; }
+  .why-item { padding:20px 0 !important; grid-template-columns:56px 1fr !important; gap:14px !important; }
+
+  /* Small buttons get tighter */
+  .btn-p, .btn-g { font-size:12px !important; padding:14px 20px !important; }
+}
+
 </style>
 </head>
 <body>
