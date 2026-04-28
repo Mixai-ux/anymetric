@@ -11,19 +11,19 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0d1323">
-<title>White Label AI Partner — anymetric</title>
-<meta name="description" content="A silent AI R&D partner for agencies and studios. Every deliverable carries your brand. Your clients never see our name. SLA-first, full discretion, IP transferred on completion.">
+<title>On-Premise AI Systems — anymetric</title>
+<meta name="description" content="Deploy AI entirely on your own infrastructure. No third-party cloud, no data exposure. anymetric builds on-premise AI systems for regulated industries, enterprise contracts, and privacy-first businesses.">
 <meta property="og:type"        content="website">
-<meta property="og:url"         content="https://anymetric.ai/white-label">
-<meta property="og:title"       content="White Label AI Partner — anymetric">
-<meta property="og:description" content="Your brand on everything we build. We stay invisible. Senior AI PM-led R&D delivered under your identity — for agencies that need AI capability without hiring for it.">
+<meta property="og:url"         content="https://anymetric.ai/on-premise-ai">
+<meta property="og:title"       content="On-Premise AI Systems — anymetric">
+<meta property="og:description" content="Your AI. Your infrastructure. Zero external exposure. We deploy local LLMs, RAG pipelines, and agentic systems entirely on your own servers. GDPR-ready, no cloud lock-in.">
 <meta property="og:image"       content="https://anymetric.ai/og-image.png">
 <meta property="og:site_name"   content="anymetric">
 <meta name="twitter:card"       content="summary_large_image">
-<meta name="twitter:title"      content="White Label AI Partner — anymetric">
-<meta name="twitter:description" content="Your brand on everything we build. We stay invisible. Senior AI PM-led R&D delivered under your identity — for agencies that need AI capability without hiring for it.">
+<meta name="twitter:title"      content="On-Premise AI Systems — anymetric">
+<meta name="twitter:description" content="Your AI. Your infrastructure. Zero external exposure. We deploy local LLMs, RAG pipelines, and agentic systems entirely on your own servers. GDPR-ready, no cloud lock-in.">
 <meta name="twitter:image"      content="https://anymetric.ai/og-image.png">
-<link rel="canonical"           href="https://anymetric.ai/white-label">
+<link rel="canonical"           href="https://anymetric.ai/on-premise-ai">
 <script defer data-domain="anymetric.ai" src="https://plausible.io/js/script.tagged-events.js"></script>
 
 <!-- ── Microsoft Clarity (heatmaps, session recordings) ── -->
@@ -40,10 +40,11 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "White Label AI Partner",
+  "name": "On-Premise AI Systems",
   "provider": { "@type": "Organization", "name": "anymetric", "url": "https://anymetric.ai" },
-  "description": "Silent AI R&D partnership for digital agencies, consultancies, and studios. All deliverables carry the partner's brand identity. Clients never see anymetric. SLA-first, full IP transfer, NDA-first engagement.",
-  "audience": { "@type": "BusinessAudience", "audienceType": "Digital agencies, marketing consultancies, technology studios, management consultancies" }
+  "description": "Deployment of AI systems entirely on the client's own infrastructure. Includes local LLM deployment, RAG pipelines, agentic automation, and AI product builds — with zero external cloud dependency.",
+  "offers": { "@type": "Offer", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+  "serviceOutput": "Fully on-premise AI system, source code, documentation, team training, and operational handoff"
 }
 </script>
 
@@ -54,34 +55,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How does the white label arrangement work?",
+      "name": "What does on-premise AI deployment mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We operate as your silent AI R&D team. You scope and sell the engagement to your client under your brand. We execute it. Every deliverable — reports, code, documentation, presentations — is produced under your brand identity with your name on it. Your client never sees anymetric referenced anywhere. We sign an NDA before any project details are shared."
+        "text": "On-premise AI deployment means the entire AI system — the model, the inference engine, the data pipeline, and the application layer — runs on servers that you own and control. No data is sent to OpenAI, Anthropic, Google, or any other third-party API. Every inference happens inside your network perimeter. This is the only architecture that provides genuine data sovereignty."
       }
     },
     {
       "@type": "Question",
-      "name": "Who owns the intellectual property?",
+      "name": "Which industries require on-premise AI deployment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All intellectual property created during a white label engagement is assigned to you on completion of payment. This includes source code, documentation, trained prompts, architectures, and any other deliverables. We retain no rights to reuse, reference, or build upon work created for your engagements."
+        "text": "Industries with regulatory, contractual, or reputational requirements for data sovereignty include: legal services (client confidentiality), healthcare and medical (patient data, HIPAA), financial services and banking (PCI DSS, MiFID II), government and public sector, defence and critical infrastructure, and any business operating under GDPR with sensitive personal data processing. Increasingly, enterprise businesses with proprietary data also require on-premise deployment to protect competitive advantage."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you match our agency's communication and delivery standards?",
+      "name": "What local LLM models do you deploy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We adapt to your document templates, tone of voice, reporting cadence, and delivery format. During onboarding, we review your standard deliverable templates and align our outputs to them before the first engagement begins. Your clients receive work that is indistinguishable in format and presentation from what they expect from your team."
+        "text": "We deploy quantized open-weight models suited to the client's hardware and use case. Commonly deployed models include Mistral 7B and 8x7B, Llama 3 (8B and 70B), Phi-3, Gemma 2, and Qwen 2.5. Model selection is driven by the performance-hardware tradeoff analysis we conduct during the audit phase. We do not recommend a model before understanding your infrastructure."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the minimum engagement size for white label?",
+      "name": "What hardware do I need for on-premise AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no minimum engagement count — we work on individual projects. However, white label arrangements work best when there is at least one active engagement at any given time, given the onboarding and NDA process. For agencies with ongoing AI demand, we offer a retainer arrangement that ensures capacity is reserved and response times are prioritised."
+        "text": "Requirements depend on the model size and workload. A 7B parameter model running at 4-bit quantization requires approximately 6–8GB VRAM — a single mid-range GPU (e.g. RTX 3090 or A10G). A 70B model requires 40–48GB VRAM. For CPU-only inference, 32–64GB RAM is viable for 7B models at lower throughput. We assess your existing infrastructure first — many clients already have hardware sufficient for production-grade on-premise AI without new investment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an on-premise AI deployment take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard on-premise RAG pipeline or document intelligence system deploys in 4–6 weeks. More complex agentic systems or multi-model pipelines take 6–10 weeks. On-premise deployments add approximately 1–2 weeks to timelines compared to cloud equivalents, primarily for infrastructure assessment, model quantization, and containerisation. All timelines are agreed in writing before work begins."
       }
     }
   ]
@@ -116,10 +125,10 @@ section{padding:100px 0;position:relative;}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);padding:0 0 0 48px;}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;padding-right:48px;}
 .nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--text);}
-.nav-wordmark{font-weight:300;font-size:16px;letter-spacing:.08em;}
+.nav-wordmark{font-weight:300;font-size:16px;letter-spacing:0.08em;}
 .nav-back{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s;}
-.nav-back::before{content:'← ';}
 .nav-back:hover{color:var(--accent);}
+.nav-back::before{content:'← ';}
 .nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px;}
 .nav-hamburger span{display:block;height:1.5px;background:var(--text-mid);border-radius:2px;transition:transform .25s,opacity .2s;}
 .nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
@@ -130,61 +139,71 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 .nav-drawer a{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--hairline);transition:color .2s;}
 .nav-drawer a:last-child{border-bottom:none;}
 .nav-drawer a:hover{color:var(--accent);}
+
+/* HERO */
+.page-hero{padding:160px 0 100px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;width:700px;height:600px;top:-100px;right:-80px;background:radial-gradient(ellipse,rgba(255,185,76,0.07) 0%,transparent 65%);pointer-events:none;}
+.page-hero::after{content:'';position:absolute;width:500px;height:400px;bottom:0;left:-60px;background:radial-gradient(ellipse,rgba(110,80,220,0.08) 0%,transparent 70%);pointer-events:none;}
 @keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 .breadcrumb{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:32px;opacity:0;animation:fu .7s ease .1s forwards;}
 .breadcrumb a{color:var(--text-muted);text-decoration:none;}
 .breadcrumb span{margin:0 10px;opacity:.4;}
 
-/* HERO */
-.page-hero{padding:160px 0 100px;position:relative;overflow:hidden;}
-.page-hero::before{content:'';position:absolute;width:600px;height:500px;top:-80px;right:-60px;background:radial-gradient(ellipse,rgba(110,80,220,0.1) 0%,transparent 65%);pointer-events:none;}
+/* TRUST BADGES */
+.trust-badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px;opacity:0;animation:fu .9s ease .7s forwards;}
+.tb{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid rgba(255,185,76,0.2);font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;}
+.tb::before{content:'✓';font-size:10px;}
 
-/* NDA BADGE */
-.nda-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border:1px solid rgba(255,185,76,0.3);margin-bottom:32px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;opacity:0;animation:fu .9s ease .1s forwards;}
-.nda-dot{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--accent);}
+/* WHY ON-PREM */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.why-text h2{font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;margin-bottom:20px;}
+.why-text p{font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;}
+.why-text p strong{color:var(--text-mid);font-weight:600;}
+.risk-list{display:flex;flex-direction:column;gap:2px;}
+.risk-item{background:var(--navy-card);border:1px solid var(--hairline);padding:20px 24px;border-left:3px solid;}
+.risk-item.red{border-left-color:#e24b4a;}
+.risk-item.amber{border-left-color:var(--accent);}
+.risk-item.green{border-left-color:#4caf50;}
+.risk-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px;}
+.risk-item.red .risk-label{color:#e24b4a;}
+.risk-item.amber .risk-label{color:var(--accent);}
+.risk-item.green .risk-label{color:#4caf50;}
+.risk-desc{font-size:13px;color:var(--text-muted);line-height:1.6;}
 
-/* HOW IT WORKS — 3-col layout */
-.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
-.how-item{background:var(--navy);padding:48px 36px;}
-.how-n{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:18px;}
-.how-t{font-size:20px;font-weight:800;line-height:1.2;margin-bottom:14px;}
-.how-d{font-size:14px;color:var(--text-muted);line-height:1.7;}
+/* USE CASES */
+.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
+.uc{background:var(--navy);padding:40px 32px;transition:background .2s;}
+.uc:hover{background:var(--navy-card);}
+.uc-icon{font-size:24px;margin-bottom:16px;color:var(--accent);}
+.uc-sector{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.uc-t{font-size:17px;font-weight:800;margin-bottom:10px;line-height:1.25;}
+.uc-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+.uc-ex{font-size:12px;color:var(--text-muted);margin-top:14px;padding-top:14px;border-top:1px solid var(--hairline);font-style:italic;}
 
-/* WHAT WE DELIVER */
-.deliver-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--hairline);}
-.dlv-row{background:var(--navy);padding:32px 36px;display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:start;}
-.dlv-row:hover{background:var(--navy-lo);}
-.dlv-svc{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);padding-top:3px;}
-.dlv-t{font-size:16px;font-weight:700;margin-bottom:8px;}
-.dlv-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+/* STACK */
+.stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);}
+.stack-item{background:var(--navy);padding:32px 28px;}
+.stack-layer{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+.stack-title{font-size:15px;font-weight:700;margin-bottom:8px;}
+.stack-techs{display:flex;flex-direction:column;gap:4px;}
+.stack-tech{font-size:12px;color:var(--text-muted);padding:3px 0;border-bottom:1px solid var(--hairline);}
+.stack-tech:last-child{border-bottom:none;}
 
-/* COMMITMENTS */
-.commit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);}
-.commit{background:var(--navy);padding:40px 28px;}
-.commit-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
-.commit-t{font-size:17px;font-weight:800;margin-bottom:10px;line-height:1.2;}
-.commit-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+/* PROCESS */
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);}
+.ps{padding:40px 28px;border-right:1px solid var(--hairline);}
+.ps:last-child{border-right:none;}
+.ps-n{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:16px;}
+.ps-t{font-size:16px;font-weight:800;line-height:1.25;margin-bottom:10px;}
+.ps-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
 
-/* WHO THIS IS FOR */
-.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-.fit-col h3{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--hairline);}
-.fit-col.good h3{color:#4caf50;}
-.fit-col.bad h3{color:var(--text-muted);}
-.fit-item{font-size:14px;color:var(--text-muted);padding:10px 0;border-bottom:1px solid var(--hairline);line-height:1.5;}
-.fit-item:last-child{border-bottom:none;}
-.fit-col.good .fit-item::before{content:'✓ ';color:#4caf50;font-weight:700;}
-.fit-col.bad .fit-item::before{content:'✗ ';color:rgba(221,226,249,0.25);font-weight:700;}
-
-/* PRICING SIGNAL */
-.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hairline);}
-.price-item{background:var(--navy);padding:40px 36px;}
-.price-tier{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
-.price-name{font-size:20px;font-weight:800;margin-bottom:8px;}
-.price-desc{font-size:14px;color:var(--text-muted);line-height:1.65;margin-bottom:20px;}
-.price-includes{list-style:none;}
-.price-includes li{font-size:13px;color:var(--text-muted);padding:6px 0;border-bottom:1px solid var(--hairline);}
-.price-includes li:last-child{border-bottom:none;}
-.price-includes li::before{content:'→ ';color:var(--accent);}
+/* HARDWARE GUIDE */
+.hw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
+.hw{background:var(--navy);padding:36px 32px;}
+.hw-tier{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+.hw-title{font-size:16px;font-weight:800;margin-bottom:8px;}
+.hw-spec{font-size:13px;color:var(--text-muted);line-height:1.65;margin-bottom:12px;}
+.hw-models{font-size:12px;color:var(--text);font-weight:600;padding:10px 0;border-top:1px solid var(--hairline);}
 
 /* FAQ */
 .faq-item{border-bottom:1px solid var(--hairline);}
@@ -196,11 +215,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 .faq-a{display:none;padding:0 0 22px;font-size:14px;color:var(--text-muted);line-height:1.75;}
 .faq-item.open .faq-a{display:block;}
 
-/* CTA */
+/* CTA FORM */
 .cta-form-inline{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;max-width:620px;margin:0 auto 24px;text-align:left;}
 .cta-form-inline .full{grid-column:1/-1;}
 
-/* FOOTER */
+/* FOOTER STRIP */
 
 /* 2-col inline grid (replaces inline style for mobile override-ability) */
 .inline-2col { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
@@ -208,18 +227,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 
 @media(max-width:900px){
   .container{padding:0 24px;}
-  .how-grid{grid-template-columns:1fr;}
-  .deliver-grid{grid-template-columns:1fr;}
-  .dlv-row{grid-template-columns:1fr;}
-  .commit-grid{grid-template-columns:1fr 1fr;}
-  .fit-grid{grid-template-columns:1fr;}
-  .pricing-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;gap:48px;}
+  .uc-grid{grid-template-columns:1fr 1fr;}
+  .stack-grid{grid-template-columns:1fr 1fr;}
+  .process-grid{grid-template-columns:1fr 1fr;}
+  .ps{border-right:none;border-bottom:1px solid var(--hairline);}
+  .ps:last-child{border-bottom:none;}
+  .hw-grid{grid-template-columns:1fr;}
   .cta-form-inline{grid-template-columns:1fr;}
   .nav-back{display:none;}
   .nav-hamburger{display:flex;}
+  .trust-badges{gap:8px;}
   }
 @media(max-width:540px){
-  .commit-grid{grid-template-columns:1fr;}
+  .uc-grid{grid-template-columns:1fr;}
+  .stack-grid{grid-template-columns:1fr;}
+  .process-grid{grid-template-columns:1fr;}
   section{padding:72px 0;}
 }
 .cert { padding:8px 18px; border:1px solid rgba(255,255,255,0.12); font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
@@ -327,7 +350,7 @@ html, body { max-width:100%; overflow-x:hidden; }
     </a>
     <div style="display:flex;align-items:center;gap:32px;">
       <a class="nav-back" href="/#services">All Services</a>
-      <a href="#enquiry" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — WhiteLabel Nav')">PARTNER ENQUIRY</a>
+      <a href="#audit" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — OnPrem Nav')">DISCUSS YOUR REQUIREMENTS</a>
       <button class="nav-hamburger" id="navHam" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -336,213 +359,244 @@ html, body { max-width:100%; overflow-x:hidden; }
   <a href="/" onclick="closeDrawer()">Home</a>
   <a href="/#services" onclick="closeDrawer()">Services</a>
   <a href="/results" onclick="closeDrawer()">Results</a>
-  <a href="#enquiry" onclick="closeDrawer()">Partner Enquiry</a>
+  <a href="#audit" onclick="closeDrawer()">Discuss Requirements</a>
 </div>
 
 <!-- HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/">anymetric</a><span>/</span>White Label Partner</p>
-    <div class="nda-badge"><div class="nda-dot"></div>NDA signed before first brief</div>
-    <div class="tag">For agencies &amp; studios</div>
+    <p class="breadcrumb"><a href="/">anymetric</a><span>/</span>Services<span>/</span>On-Premise AI Systems</p>
+    <div class="tag">Service 06</div>
     <h1 style="font-size:clamp(40px,6vw,80px);font-weight:900;line-height:.96;letter-spacing:-.03em;margin-bottom:28px;opacity:0;animation:fu .9s ease .2s forwards;">
-      Your Brand<br>on Everything<br><span class="grad">We Build.</span>
+      Your AI.<br>Your Infrastructure.<br><span class="grad">Zero External Exposure.</span>
     </h1>
-    <p style="font-size:18px;color:var(--text-mid);max-width:580px;line-height:1.68;margin-bottom:44px;opacity:0;animation:fu .9s ease .35s forwards;">We are your silent AI R&amp;D team. You own the client relationship and the deliverables. We provide the senior AI PM capability, the builds, and the results — invisibly, under your name.</p>
-    <div style="display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fu .9s ease .5s forwards;">
-      <a href="#enquiry" class="btn-p" onclick="plausible('CTA Click — WhiteLabel Hero')">START PARTNER ENQUIRY →</a>
-      <a href="#how-it-works" class="btn-g">HOW IT WORKS</a>
+    <p style="font-size:18px;color:var(--text-mid);max-width:580px;line-height:1.68;margin-bottom:44px;opacity:0;animation:fu .9s ease .35s forwards;">Most agencies run your AI on their cloud. We deploy on your server — your data never leaves your perimeter. Built for businesses where data sovereignty is not a preference. It is a requirement.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:0;opacity:0;animation:fu .9s ease .5s forwards;">
+      <a href="#audit" class="btn-p" onclick="plausible('CTA Click — OnPrem Hero')">DISCUSS YOUR REQUIREMENTS →</a>
+      <a href="#use-cases" class="btn-g">SEE USE CASES</a>
+    </div>
+    <div class="trust-badges">
+      <div class="tb">Full data sovereignty</div>
+      <div class="tb">GDPR-ready by design</div>
+      <div class="tb">No cloud lock-in</div>
+      <div class="tb">Local LLM deployment</div>
+      <div class="tb">Source code included</div>
     </div>
   </div>
 </section>
 
-<!-- THE PROBLEM -->
+<!-- WHY ON-PREMISE -->
 <section class="s-lo">
   <div class="container">
-    <div class="inline-2col-even">
+    <div class="why-grid">
+      <div class="why-text">
+        <div class="tag">The problem with cloud AI</div>
+        <h2>Every API Call Sends Your Data<br><span class="grad">Somewhere Else.</span></h2>
+        <p>When you use a cloud AI API — OpenAI, Anthropic, Google, Azure — your data travels to a third-party data centre for processing. For most businesses, that is an acceptable tradeoff. For yours, it may not be.</p>
+        <p>Client documents, patient records, financial data, legal correspondence, proprietary research — the moment these pass through an external API, your data sovereignty claim ends. Your privacy policy becomes contingent on a third party's. Your compliance posture depends on their terms of service, which can change.</p>
+        <p><strong>On-premise AI eliminates this entirely.</strong> The model runs on your hardware. The data never leaves your network. Inference happens inside your perimeter — not theirs.</p>
+        <p>The performance gap between local and cloud models has effectively closed for most enterprise use cases. Mistral, Llama 3, and Qwen at 7B–70B now match GPT-3.5 and approach GPT-4 on most practical tasks. The capability is available. The question is where it runs.</p>
+      </div>
       <div>
-        <div class="tag">The agency problem</div>
-        <h2 style="font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;margin-bottom:20px;">Your Clients Are Asking<br>for AI. Your Team<br><span class="grad">Isn't Staffed for It.</span></h2>
-        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">Every digital agency, consultancy, and studio is hearing the same thing from clients in 2026: <em style="color:var(--text-mid);">"What is your AI strategy? What can you do with AI for us?"</em></p>
-        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">The agencies that answer well are keeping retainers and winning new business. The ones that deflect are losing both. But building an in-house AI PM capability — certified practitioners, current tools, production experience — takes time you don't have and headcount budget you may not have approved.</p>
-        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">That gap is exactly what we fill. Invisibly.</p>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:2px;">
-        <div style="background:var(--navy-card);border:1px solid var(--hairline);padding:24px 28px;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;">The typical gap</div>
-          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">A client asks for an AI-powered recommendation engine, a GEO audit, or an on-premise AI system. You have the client trust and the project management infrastructure. You don't have the AI engineering and PM depth to deliver it confidently at senior level.</p>
-        </div>
-        <div style="background:var(--navy-card);border:1px solid var(--hairline);padding:24px 28px;">
-          <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#4caf50;margin-bottom:10px;">The white label answer</div>
-          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">You scope and sell the engagement. We design and deliver it. Your client receives work under your brand, in your document templates, with your name on the final deck. We are the engineering and PM layer you needed — on demand, at project cost, not headcount cost.</p>
+        <div class="risk-list">
+          <div class="risk-item red">
+            <div class="risk-label">Cloud AI — data risk</div>
+            <div class="risk-desc">Your data transits and is processed on third-party infrastructure. Subject to their data retention policies, government data requests, and terms-of-service changes. Not suitable for regulated data categories.</div>
+          </div>
+          <div class="risk-item amber">
+            <div class="risk-label">Private cloud / VPC — partial control</div>
+            <div class="risk-desc">Data stays in your cloud tenant, but you remain dependent on the cloud provider's infrastructure, pricing, and availability. Data sovereignty is contractual — not technical.</div>
+          </div>
+          <div class="risk-item green">
+            <div class="risk-label">On-premise — full sovereignty</div>
+            <div class="risk-desc">Model, data, and inference run on hardware you own and control. Zero third-party dependency at any point in the pipeline. The only architecture that provides genuine, technical — not contractual — data sovereignty.</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section id="how-it-works">
+<!-- USE CASES -->
+<section id="use-cases">
   <div class="container">
     <div style="margin-bottom:56px;">
-      <div class="tag">How it works</div>
-      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Three Steps.<br><span class="grad">Your Client Never Knows.</span></h2>
+      <div class="tag">Who needs this</div>
+      <h2 style="font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;">If Your Data Cannot Leave<br><span class="grad">Your Building — Call Us First.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">The use case shapes the architecture. These are the most common starting points — if yours looks different, the intake form handles that.</p>
+    </div>
+    <div class="uc-grid">
+      <div class="uc">
+        <div class="uc-sector">Legal · Professional Services</div>
+        <div class="uc-t">Document Intelligence & Contract Analysis</div>
+        <p class="uc-d">Clause extraction, precedent search, contract comparison, and due diligence summarisation — entirely within your network. Client confidentiality obligations met by architecture, not policy.</p>
+        <div class="uc-ex">Case study: −71% document review time, 3.5× paralegal throughput. Zero data left the firm's infrastructure.</div>
+      </div>
+      <div class="uc">
+        <div class="uc-sector">Healthcare · Medical</div>
+        <div class="uc-t">Patient Record Intelligence & Clinical Support</div>
+        <p class="uc-d">Clinical note analysis, coding assistance, patient history summarisation, and diagnostic support tools — with patient data never touching an external server. HIPAA and GDPR compliance maintained by design.</p>
+        <div class="uc-ex">Typical deployment: on-premise RAG over EHR exports, local inference, staff-facing interface with role-based access.</div>
+      </div>
+      <div class="uc">
+        <div class="uc-sector">Financial Services · Banking</div>
+        <div class="uc-t">Transaction Intelligence & Compliance Automation</div>
+        <p class="uc-d">Transaction pattern analysis, KYC document processing, regulatory report drafting, and internal audit support — with financial data processed entirely on-premise. PCI DSS and MiFID II compatible architecture.</p>
+        <div class="uc-ex">Typical deployment: local LLM with structured data connectors, no external API calls at any stage.</div>
+      </div>
+      <div class="uc">
+        <div class="uc-sector">Enterprise · Any Sector</div>
+        <div class="uc-t">Internal Knowledge Base & Copilot</div>
+        <p class="uc-d">An AI assistant trained on your internal documentation, product data, and institutional knowledge — deployed as a private, on-premise copilot for your team. No proprietary information ever trains an external model.</p>
+        <div class="uc-ex">Typical deployment: RAG over internal docs, intranet-hosted chat interface, active directory authentication.</div>
+      </div>
+      <div class="uc">
+        <div class="uc-sector">Manufacturing · Operations</div>
+        <div class="uc-t">Process Intelligence & Anomaly Detection</div>
+        <p class="uc-d">Production data analysis, maintenance prediction, quality control support, and operational reporting — with manufacturing data and IP staying on your infrastructure. Air-gapped deployment available for critical environments.</p>
+        <div class="uc-ex">Typical deployment: local model + sensor data pipeline, no internet dependency required for inference.</div>
+      </div>
+      <div class="uc">
+        <div class="uc-sector">Government · Public Sector</div>
+        <div class="uc-t">Sovereign AI for Public Administration</div>
+        <p class="uc-d">Document processing, citizen inquiry handling, policy analysis, and internal research tools — with citizen and classified data remaining under sovereign infrastructure control. Fully air-gapped deployment available.</p>
+        <div class="uc-ex">Typical deployment: isolated network, local model serving, no external DNS or CDN dependencies.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="s-lo">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Technology</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">What We Deploy<br><span class="grad">On Your Infrastructure.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:480px;">Every component is open-weight, self-hostable, and fully transferable to your team. No proprietary runtime dependencies.</p>
     </div>
     <div class="hl" style="margin-bottom:0;"></div>
-    <div class="how-grid">
-      <div class="how-item">
-        <div class="how-n">01 — NDA &amp; ONBOARDING</div>
-        <div class="how-t">We sign first. Then you brief.</div>
-        <p class="how-d">Mutual NDA executed before any project details are shared. We review your standard deliverable templates, brand guidelines, tone of voice, and client communication standards. Alignment happens once — then it's seamless for every engagement.</p>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <div class="stack-layer">Layer 01 — Models</div>
+        <div class="stack-title">Local LLM Runtime</div>
+        <div class="stack-techs">
+          <div class="stack-tech">Mistral 7B / 8×7B (MoE)</div>
+          <div class="stack-tech">Llama 3 (8B / 70B)</div>
+          <div class="stack-tech">Phi-3 / Phi-3.5</div>
+          <div class="stack-tech">Gemma 2 (9B / 27B)</div>
+          <div class="stack-tech">Qwen 2.5 (7B / 72B)</div>
+          <div class="stack-tech">Served via Ollama / vLLM</div>
+        </div>
       </div>
-      <div class="how-item" style="background:var(--navy-lo);">
-        <div class="how-n">02 — DELIVERY</div>
-        <div class="how-t">We build. You present.</div>
-        <p class="how-d">Every deliverable — strategy documents, audits, code, dashboards, presentations — is produced under your brand identity. We communicate with you, not your client. Status updates, questions, scope changes — all routed through you. Your client sees only your team delivering.</p>
+      <div class="stack-item" style="background:var(--navy-lo);">
+        <div class="stack-layer">Layer 02 — Retrieval</div>
+        <div class="stack-title">RAG Pipeline</div>
+        <div class="stack-techs">
+          <div class="stack-tech">LlamaIndex / LangChain</div>
+          <div class="stack-tech">Qdrant / Chroma (local vector DB)</div>
+          <div class="stack-tech">Local embedding models</div>
+          <div class="stack-tech">PDF, DOCX, structured data</div>
+          <div class="stack-tech">Semantic + keyword hybrid</div>
+          <div class="stack-tech">Re-ranking pipeline</div>
+        </div>
       </div>
-      <div class="how-item">
-        <div class="how-n">03 — TRANSFER</div>
-        <div class="how-t">IP assigned. Engagement closed.</div>
-        <p class="how-d">On completion, all intellectual property is assigned to you in full: source code, documentation, trained prompts, architecture assets. We retain nothing. No ongoing dependency, no licence fee, no lock-in. You own everything we built — for ever.</p>
+      <div class="stack-item">
+        <div class="stack-layer">Layer 03 — Application</div>
+        <div class="stack-title">Interface & APIs</div>
+        <div class="stack-techs">
+          <div class="stack-tech">Node.js / FastAPI backend</div>
+          <div class="stack-tech">React / plain HTML frontend</div>
+          <div class="stack-tech">REST API or internal SDK</div>
+          <div class="stack-tech">SSE streaming support</div>
+          <div class="stack-tech">Active Directory / SSO auth</div>
+          <div class="stack-tech">Role-based access control</div>
+        </div>
+      </div>
+      <div class="stack-item" style="background:var(--navy-lo);">
+        <div class="stack-layer">Layer 04 — Operations</div>
+        <div class="stack-title">Deployment & Monitoring</div>
+        <div class="stack-techs">
+          <div class="stack-tech">Docker / Kubernetes</div>
+          <div class="stack-tech">Prometheus + Grafana (local)</div>
+          <div class="stack-tech">Local logging — no external sink</div>
+          <div class="stack-tech">Model versioning &amp; rollback</div>
+          <div class="stack-tech">Automated health checks</div>
+          <div class="stack-tech">Full runbook + team handoff</div>
+        </div>
       </div>
     </div>
     <div class="hl" style="margin-top:0;"></div>
   </div>
 </section>
 
-<!-- WHAT WE DELIVER -->
-<section class="s-lo">
-  <div class="container">
-    <div style="margin-bottom:56px;">
-      <div class="tag">Scope of work</div>
-      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Everything We Build<br><span class="grad">Under Your Name.</span></h2>
-      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">All six anymetric service types are available for white label delivery. The full capability — under your brand.</p>
-    </div>
-    <div class="deliver-grid">
-      <div class="dlv-row">
-        <div class="dlv-svc">GEO &amp; AEO Optimization</div>
-        <div><div class="dlv-t">AI Engine Visibility Audits &amp; Implementation</div><p class="dlv-d">Citation audit, Q&amp;A content architecture, Schema.org markup, entity authority build, citation tracking dashboard. Delivered as your agency's AI search capability.</p></div>
-      </div>
-      <div class="dlv-row">
-        <div class="dlv-svc">Voice AI Agents</div>
-        <div><div class="dlv-t">Inbound Voice AI Qualification &amp; Handling</div><p class="dlv-d">Custom voice identity, call handling flows, CRM integration, white-label voice persona. Your client hears your agency's AI solution — not ours.</p></div>
-      </div>
-      <div class="dlv-row">
-        <div class="dlv-svc">Agentic Automation</div>
-        <div><div class="dlv-t">Workflow Automation &amp; Operational AI Pipelines</div><p class="dlv-d">Multi-step agentic pipelines for reporting, onboarding, support triage, data enrichment. Source code transferred — your client's infrastructure, your agency's delivery.</p></div>
-      </div>
-      <div class="dlv-row">
-        <div class="dlv-svc">AI Product Build</div>
-        <div><div class="dlv-t">Minimum Lovable Product Development</div><p class="dlv-d">Full-stack AI product builds: recommendation engines, internal copilots, customer-facing AI tools. Delivered as your agency's product development capability.</p></div>
-      </div>
-      <div class="dlv-row">
-        <div class="dlv-svc">AI Strategy &amp; Audit</div>
-        <div><div class="dlv-t">AI Opportunity Assessment &amp; Prioritised Backlogs</div><p class="dlv-d">Workflow audits, AI opportunity scoring, ROI-ranked backlog with metric targets. Delivered in your document template, with your agency's recommendations framing.</p></div>
-      </div>
-      <div class="dlv-row">
-        <div class="dlv-svc">On-Premise AI</div>
-        <div><div class="dlv-t">Local AI Deployment for Regulated Clients</div><p class="dlv-d">Full on-premise AI architecture, model deployment, RAG pipeline, documentation, and team training. Your agency's data sovereignty solution for clients with compliance requirements.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OUR COMMITMENTS -->
+<!-- HARDWARE GUIDE -->
 <section>
   <div class="container">
     <div style="margin-bottom:56px;">
-      <div class="tag">Our commitments to you</div>
-      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">What We Guarantee<br><span class="grad">Every Engagement.</span></h2>
+      <div class="tag">Infrastructure</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">What Hardware<br><span class="grad">You Actually Need.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">We assess your existing infrastructure before recommending anything. Many clients already have sufficient hardware. New investment is less common than assumed.</p>
+    </div>
+    <div class="hw-grid">
+      <div class="hw">
+        <div class="hw-tier">Tier 1 — Entry</div>
+        <div class="hw-title">Single mid-range GPU</div>
+        <p class="hw-spec">6–8GB VRAM (RTX 3090, RTX 4080, A10G). Sufficient for 7B parameter models at 4-bit quantization. Handles moderate concurrent users and document-scale workloads.</p>
+        <div class="hw-models">Runs: Mistral 7B · Llama 3 8B · Phi-3 · Gemma 2 9B</div>
+      </div>
+      <div class="hw" style="background:var(--navy-lo);">
+        <div class="hw-tier">Tier 2 — Production</div>
+        <div class="hw-title">Dual GPU or A100-class</div>
+        <p class="hw-spec">24–48GB VRAM (2× RTX 4090, A100 40GB, L40S). Supports 13B–34B models at full precision, or 70B at quantization. Enterprise throughput, low latency, multi-user concurrency.</p>
+        <div class="hw-models">Runs: Llama 3 70B (Q4) · Qwen 72B (Q4) · Mistral 8×7B</div>
+      </div>
+      <div class="hw">
+        <div class="hw-tier">Tier 3 — High-throughput</div>
+        <div class="hw-title">Multi-GPU server or CPU cluster</div>
+        <p class="hw-spec">80GB+ VRAM (A100 80GB, H100) or high-RAM CPU server (256GB+ RAM). Full-precision 70B models, high-concurrency production workloads, or air-gapped environments without GPU access.</p>
+        <div class="hw-models">Runs: Any model at full precision · Custom fine-tuned models</div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:var(--text-muted);margin-top:20px;">Hardware assessment is part of every engagement. We scope to your existing infrastructure first — new hardware procurement is only recommended when the use case genuinely requires it.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="s-mid">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">How we deploy</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">From Infrastructure Audit<br><span class="grad">to Live System.</span></h2>
     </div>
     <div class="hl" style="margin-bottom:0;"></div>
-    <div class="commit-grid">
-      <div class="commit">
-        <div class="commit-label">Invisibility</div>
-        <div class="commit-t">Your client never sees our name.</div>
-        <p class="commit-d">No anymetric branding, watermarks, or references in any deliverable. Document headers, footers, email domains, and communication channels all reflect your agency identity.</p>
+    <div class="process-grid">
+      <div class="ps">
+        <div class="ps-n">01 — ASSESS</div>
+        <h3 class="ps-t">Infrastructure & Requirements</h3>
+        <p class="ps-d">We audit your existing hardware, network architecture, and compliance requirements. Model selection and stack design follow from what you already have — not from a standard template.</p>
       </div>
-      <div class="commit" style="background:var(--navy-lo);">
-        <div class="commit-label">Discretion</div>
-        <div class="commit-t">We do not reference you without consent.</div>
-        <p class="commit-d">We do not name our white label partners publicly, in case studies, or in sales materials. Your agency's use of our capability remains confidential at your discretion.</p>
+      <div class="ps">
+        <div class="ps-n">02 — ARCHITECT</div>
+        <h3 class="ps-t">System Design</h3>
+        <p class="ps-d">Full architecture document: model choice, quantization strategy, RAG pipeline design, authentication, monitoring, and deployment topology. Approved before any code is written.</p>
       </div>
-      <div class="commit">
-        <div class="commit-label">IP Transfer</div>
-        <div class="commit-t">Everything we build is yours.</div>
-        <p class="commit-d">Full source code, documentation, trained assets, and architectural IP is assigned to you on completion. We retain zero rights to reuse or reference the work.</p>
+      <div class="ps">
+        <div class="ps-n">03 — BUILD</div>
+        <h3 class="ps-t">Development & Testing</h3>
+        <p class="ps-d">We build and test the system in a staging environment that mirrors your production infrastructure. Performance benchmarks, load tests, and security review completed before deployment.</p>
       </div>
-      <div class="commit" style="background:var(--navy-lo);">
-        <div class="commit-label">SLA-First</div>
-        <div class="commit-t">Defined response times. Direct access.</div>
-        <p class="commit-d">White label partners receive priority SLA treatment: defined response windows, direct access to the senior PM on your account, and proactive status updates without prompting.</p>
+      <div class="ps">
+        <div class="ps-n">04 — DEPLOY</div>
+        <h3 class="ps-t">On-Premise Installation</h3>
+        <p class="ps-d">Containerised deployment directly onto your infrastructure. No remote access retained after handoff. Full installation carried out by your team using our runbook, or on-site by ours.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-n">05 — HANDOFF</div>
+        <h3 class="ps-t">Documentation & Training</h3>
+        <p class="ps-d">Complete technical documentation, operational runbook, and team training. Your team can maintain, update, and extend the system independently. Source code transferred in full on completion.</p>
       </div>
     </div>
     <div class="hl" style="margin-top:0;"></div>
-  </div>
-</section>
-
-<!-- WHO THIS IS FOR -->
-<section class="s-lo">
-  <div class="container">
-    <div style="margin-bottom:56px;">
-      <div class="tag">Fit</div>
-      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Who This Works For.<br><span class="grad">Who It Doesn't.</span></h2>
-      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:480px;">We work well as a white label partner when there is a clear client relationship to protect and a real AI capability gap to fill.</p>
-    </div>
-    <div class="fit-grid">
-      <div class="fit-col good">
-        <h3>Good fit</h3>
-        <div class="fit-item">Digital agencies with established client relationships and no in-house AI PM capability</div>
-        <div class="fit-item">Marketing consultancies whose clients are asking for GEO and AI search strategy</div>
-        <div class="fit-item">Technology studios that build products but need AI engineering depth on demand</div>
-        <div class="fit-item">Management consultancies adding AI transformation to their service portfolio</div>
-        <div class="fit-item">Boutique agencies with one or two large clients requiring AI work beyond current team capability</div>
-        <div class="fit-item">Studios that want to offer on-premise AI to regulated clients without hiring for it</div>
-      </div>
-      <div class="fit-col bad">
-        <h3>Not the right fit</h3>
-        <div class="fit-item">Businesses looking to resell our services without an active client engagement</div>
-        <div class="fit-item">Agencies expecting a generic AI product they can pitch as proprietary IP without an NDA</div>
-        <div class="fit-item">Partners who cannot commit to routing all client communication through a single point of contact</div>
-        <div class="fit-item">Engagements where the end client expects a named sub-contractor disclosure</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING SIGNAL -->
-<section>
-  <div class="container">
-    <div style="margin-bottom:56px;">
-      <div class="tag">Pricing structure</div>
-      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Project Cost.<br><span class="grad">Not Headcount Cost.</span></h2>
-      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">White label is priced per project or per retainer. Margin is your business — we price to your wholesale rate. You add the markup that reflects your client relationship and account management.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="price-item">
-        <div class="price-tier">Project-based</div>
-        <div class="price-name">Per-Engagement Delivery</div>
-        <p class="price-desc">Scoped, priced, and delivered per client engagement. Full project fee agreed upfront. Suitable for agencies with occasional AI client demand or project-by-project work.</p>
-        <ul class="price-includes">
-          <li>Scoped before any commitment</li>
-          <li>Fixed fee per deliverable</li>
-          <li>NDA + IP assignment included</li>
-          <li>No retainer required</li>
-        </ul>
-      </div>
-      <div class="price-item" style="background:var(--navy-lo);">
-        <div class="price-tier">Retainer-based</div>
-        <div class="price-name">Reserved Capacity Arrangement</div>
-        <p class="price-desc">A fixed monthly retainer reserves a defined number of senior AI PM days per month. Priority SLA, faster turnaround, and dedicated account management. Suitable for agencies with ongoing or recurring AI client demand.</p>
-        <ul class="price-includes">
-          <li>Reserved days per month</li>
-          <li>Priority queue — your work moves first</li>
-          <li>Dedicated senior PM on your account</li>
-          <li>Rollovers for unused days (capped)</li>
-        </ul>
-      </div>
-    </div>
-    <p style="font-size:13px;color:var(--text-muted);margin-top:20px;">Wholesale pricing discussed during the partner enquiry — after NDA. Rates are structured so a standard agency markup (2–3×) produces competitive client-facing pricing in your market.</p>
   </div>
 </section>
 
@@ -552,28 +606,32 @@ html, body { max-width:100%; overflow-x:hidden; }
     <div class="inline-2col">
       <div>
         <div class="tag">FAQ</div>
-        <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">Partner<br><span class="grad">Questions.</span></h2>
+        <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">On-Premise AI<br><span class="grad">Questions.</span></h2>
       </div>
       <div>
         <div class="faq-item open">
-          <div class="faq-q">How does the white label arrangement work?<span class="faq-tog"></span></div>
-          <div class="faq-a">We operate as your silent AI R&amp;D team. You scope and sell the engagement to your client under your brand. We execute it. Every deliverable — reports, code, documentation, presentations — is produced under your brand identity with your name on it. Your client never sees anymetric referenced anywhere. We sign an NDA before any project details are shared.</div>
+          <div class="faq-q">What does on-premise AI deployment mean?<span class="faq-tog"></span></div>
+          <div class="faq-a">On-premise AI deployment means the entire AI system — the model, the inference engine, the data pipeline, and the application layer — runs on servers that you own and control. No data is sent to OpenAI, Anthropic, Google, or any other third-party API. Every inference happens inside your network perimeter. This is the only architecture that provides genuine data sovereignty.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Who owns the intellectual property?<span class="faq-tog"></span></div>
-          <div class="faq-a">All intellectual property created during a white label engagement is assigned to you on completion of payment. This includes source code, documentation, trained prompts, architectures, and any other deliverables. We retain no rights to reuse, reference, or build upon work created for your engagements.</div>
+          <div class="faq-q">Which industries require on-premise AI deployment?<span class="faq-tog"></span></div>
+          <div class="faq-a">Industries with regulatory, contractual, or reputational requirements for data sovereignty include: legal services (client confidentiality), healthcare and medical (patient data, HIPAA), financial services and banking (PCI DSS, MiFID II), government and public sector, defence and critical infrastructure, and any business processing sensitive personal data under GDPR. Increasingly, enterprise businesses with proprietary data also require on-premise deployment to protect competitive advantage.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Can you match our agency's communication and delivery standards?<span class="faq-tog"></span></div>
-          <div class="faq-a">Yes. We adapt to your document templates, tone of voice, reporting cadence, and delivery format. During onboarding, we review your standard deliverable templates and align our outputs to them before the first engagement begins. Your clients receive work that is indistinguishable in format and presentation from what they expect from your team.</div>
+          <div class="faq-q">What local LLM models do you deploy?<span class="faq-tog"></span></div>
+          <div class="faq-a">We deploy quantized open-weight models suited to the client's hardware and use case. Commonly deployed models include Mistral 7B and 8×7B, Llama 3 (8B and 70B), Phi-3, Gemma 2, and Qwen 2.5. Model selection is driven by the performance-hardware tradeoff analysis we conduct during the audit phase. We do not recommend a model before understanding your infrastructure and workload requirements.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">What is the minimum engagement size for white label?<span class="faq-tog"></span></div>
-          <div class="faq-a">There is no minimum engagement count — we work on individual projects. However, white label arrangements work best when there is at least one active engagement at any given time, given the onboarding and NDA process. For agencies with ongoing AI demand, we offer a retainer arrangement that reserves capacity and prioritises your work.</div>
+          <div class="faq-q">What hardware do I need for on-premise AI?<span class="faq-tog"></span></div>
+          <div class="faq-a">Requirements depend on the model size and workload. A 7B parameter model running at 4-bit quantization requires approximately 6–8GB VRAM — a single mid-range GPU is sufficient. A 70B model requires 40–48GB VRAM. For CPU-only inference, 32–64GB RAM supports 7B models at lower throughput. We assess your existing infrastructure first — many clients already have hardware sufficient for production-grade on-premise AI without new capital expenditure.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">How do you handle communication with our clients during delivery?<span class="faq-tog"></span></div>
-          <div class="faq-a">We do not communicate directly with your clients at any point. All questions, updates, and deliverables route through you as the single point of contact. We align with your preferred communication cadence — weekly updates, async Slack channel, or formal status reports — and you present everything to your client in your voice.</div>
+          <div class="faq-q">How long does an on-premise AI deployment take?<span class="faq-tog"></span></div>
+          <div class="faq-a">A standard on-premise RAG pipeline or document intelligence system deploys in 4–6 weeks. More complex agentic systems take 6–10 weeks. On-premise deployments add approximately 1–2 weeks to equivalent cloud timelines, primarily for infrastructure assessment, model quantization, and containerisation. All timelines are agreed in writing before work begins.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do we retain access to your system after deployment?<span class="faq-tog"></span></div>
+          <div class="faq-a">No. After handoff, we retain zero access to your infrastructure, your model, or your data. All source code, configuration files, and credentials are transferred to you in full. Our involvement ends at your instruction. This is not a managed service by default — though we offer optional support retainers for clients who prefer it.</div>
         </div>
       </div>
     </div>
@@ -581,37 +639,42 @@ html, body { max-width:100%; overflow-x:hidden; }
 </section>
 
 <!-- CTA -->
-<section class="s-mid" id="enquiry">
+<section class="s-mid" id="audit">
   <div class="container">
     <div style="text-align:center;max-width:680px;margin:0 auto;">
-      <div class="nda-badge" style="opacity:1;animation:none;margin-bottom:32px;"><div class="nda-dot"></div>NDA signed before first brief. Always.</div>
-      <div class="tag">Start a partnership</div>
-      <h2 style="font-size:clamp(28px,4vw,52px);font-weight:900;line-height:1.05;margin-bottom:18px;">Tell Us About<br><span class="grad">Your Client Gap.</span></h2>
-      <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Describe the type of AI work your clients are asking for. We'll confirm whether we're a fit and send you a partner overview and wholesale rate sheet — after NDA.</p>
-      <form class="cta-form-inline" name="white-label-enquiry" method="POST">
-        <input type="hidden" name="form-name" value="white-label-enquiry">
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid rgba(255,185,76,0.25);font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.1em;margin-bottom:32px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#4caf50;animation:pulse 2s ease-in-out infinite;"></span>
+        ASYNC FIRST — No call required
+      </div>
+      <div class="tag">Free infrastructure assessment</div>
+      <h2 style="font-size:clamp(28px,4vw,52px);font-weight:900;line-height:1.05;margin-bottom:18px;">Tell Us What<br><span class="grad">Cannot Leave Your Building.</span></h2>
+      <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Describe your use case and infrastructure constraints. We'll return a personalised architecture recommendation and feasibility assessment within 48 hours.</p>
+      <form class="cta-form-inline" name="onprem-enquiry" method="POST">
+        <input type="hidden" name="form-name" value="onprem-enquiry">
         <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
-        <input type="hidden" name="subject" value="[anymetric] White Label Enquiry">
+        <input type="hidden" name="subject" value="[anymetric] Onprem Enquiry">
         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-        <div><label class="fl">Your Name</label><input type="text" name="name" placeholder="Your name" required></div>
-        <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@agency.com" required></div>
-        <div><label class="fl">Agency / Studio Name</label><input type="text" name="agency" placeholder="Your agency name"></div>
-        <div><label class="fl">Agency Size</label>
-          <select name="size">
-            <option value="">Select team size...</option>
-            <option>1–5 people</option>
-            <option>6–20 people</option>
-            <option>21–50 people</option>
-            <option>50+ people</option>
+        <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>
+        <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>
+        <div><label class="fl">Company</label><input type="text" name="company" placeholder="Your company"></div>
+        <div><label class="fl">Sector</label><input type="text" name="sector" placeholder="Legal / Healthcare / Finance / Other"></div>
+        <div class="full">
+          <label class="fl">Compliance or data sovereignty constraint</label>
+          <select name="compliance">
+            <option value="">Select primary constraint...</option>
+            <option>GDPR — sensitive personal data</option>
+            <option>Client confidentiality — legal / professional services</option>
+            <option>HIPAA / patient data</option>
+            <option>Financial data — PCI DSS / MiFID II</option>
+            <option>Government / public sector — sovereign data</option>
+            <option>Proprietary IP — competitive sensitivity</option>
+            <option>Other — describe below</option>
           </select>
         </div>
-        <div class="full">
-          <label class="fl">What AI work are your clients asking for?</label>
-          <textarea name="demand" rows="3" placeholder="E.g. Several of our e-commerce clients are asking for AI-powered personalisation and GEO optimisation. We have the PM and strategy layer but no AI engineering depth." style="min-height:80px;"></textarea>
-        </div>
+        <div class="full"><label class="fl">Describe your use case and existing infrastructure</label><textarea name="usecase" rows="3" placeholder="E.g. We process client legal documents that cannot leave our network. We have an existing server with an RTX 4090. We need document analysis and search across 50,000 archived files." style="min-height:80px;"></textarea></div>
         <div class="full" style="text-align:center;">
-          <button type="submit" class="btn-p" style="width:100%;max-width:360px;" onclick="plausible('White Label Enquiry Submit')">SEND PARTNER ENQUIRY →</button>
-          <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">We respond within 48 hours with an NDA and partner overview. No commitment required.</p>
+          <button type="submit" class="btn-p" style="width:100%;max-width:360px;" onclick="plausible('OnPrem Enquiry Submit')">SEND MY REQUIREMENTS →</button>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">Reviewed by a senior AI engineer within 48 hours. Architecture recommendation included. No commitment required.</p>
         </div>
       </form>
     </div>
@@ -687,7 +750,14 @@ document.querySelectorAll("form[name]").forEach(form => {
       if (FORM_ENDPOINT) {
         const res = await fetch(FORM_ENDPOINT, {
           method: "POST",
-          body: fd
+          headers: {
+            "Content-Type": "application/json",
+            // Uncomment for Supabase:
+            // "apikey": "YOUR_SUPABASE_ANON_KEY",
+            // "Authorization": "Bearer YOUR_SUPABASE_ANON_KEY",
+            // "Prefer": "return=minimal"
+          },
+          body: JSON.stringify(data)
         });
         if (!res.ok) throw new Error("Submit failed: " + res.status);
       } else {
