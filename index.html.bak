@@ -1401,14 +1401,7 @@ document.querySelectorAll("form[name]").forEach(form => {
       if (FORM_ENDPOINT) {
         const res = await fetch(FORM_ENDPOINT, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            // Uncomment for Supabase:
-            // "apikey": "YOUR_SUPABASE_ANON_KEY",
-            // "Authorization": "Bearer YOUR_SUPABASE_ANON_KEY",
-            // "Prefer": "return=minimal"
-          },
-          body: JSON.stringify(data)
+          body: fd
         });
         if (!res.ok) throw new Error("Submit failed: " + res.status);
       } else {

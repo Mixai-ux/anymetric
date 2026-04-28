@@ -736,6 +736,7 @@ const FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint 
 
 document.querySelectorAll("form[name]").forEach(form => {
   form.addEventListener("submit", async (e) => {
+    if (form.action && form.action.includes("web3forms")) return;
     e.preventDefault();
     const btn = form.querySelector("button[type=submit]");
     const originalText = btn ? btn.textContent : "";
