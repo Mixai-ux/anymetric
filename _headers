@@ -5,7 +5,7 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://*.clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io https://*.clarity.ms https://*.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://*.supabase.co https://api.web3forms.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://*.clarity.ms https://www.clarity.ms https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io https://*.clarity.ms https://*.supabase.co https://api.web3forms.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://*.supabase.co https://api.web3forms.com
 
 # ── CSP extension guide (for future work) ───────────────────────────────
 # If adding a chatbot widget (Intercom, Crisp, custom n8n webhook):
