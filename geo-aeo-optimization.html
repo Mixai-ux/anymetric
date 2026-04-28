@@ -782,32 +782,25 @@ const FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint 
 
 document.querySelectorAll("form[name]").forEach(form => {
   form.addEventListener("submit", async (e) => {
-    if (form.action && form.action.includes("web3forms")) return;
     e.preventDefault();
     const btn = form.querySelector("button[type=submit]");
     const originalText = btn ? btn.textContent : "";
     if (btn) { btn.disabled = true; btn.textContent = "SENDING…"; }
 
-    const data = Object.fromEntries(new FormData(form));
-    data.form_source = form.getAttribute("name");
-    data.submitted_at = new Date().toISOString();
-    data.page = window.location.pathname;
+    const fd = new FormData(form);
+    fd.append("form_source", form.getAttribute("name"));
+    fd.append("submitted_at", new Date().toISOString());
+    fd.append("page", window.location.pathname);
 
     try {
-      if (FORM_ENDPOINT) {
-        const res = await fetch(FORM_ENDPOINT, {
-          method: "POST",
-          body: fd
-        });
-        if (!res.ok) throw new Error("Submit failed: " + res.status);
-      } else {
-        // No backend wired yet — log locally and continue so testing still works
-        console.log("[Form submission — no endpoint configured]", data);
-        await new Promise(r => setTimeout(r, 600));
-      }
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        body: fd
+      });
+      if (!res.ok) throw new Error("Submit failed: " + res.status);
 
       if (typeof plausible === "function") {
-        plausible("Form Submit Success", { props: { form: data.form_source } });
+        plausible("Form Submit Success", { props: { form: form.getAttribute("name") } });
       }
       form.innerHTML = `<div style="padding:40px 0;text-align:center;">
         <div style="font-size:32px;margin-bottom:16px;">✓</div>
@@ -817,7 +810,7 @@ document.querySelectorAll("form[name]").forEach(form => {
     } catch (err) {
       console.error(err);
       if (btn) { btn.disabled = false; btn.textContent = originalText; }
-      alert("Something went wrong. Please try again or email hello@anymetric.ai");
+      alert("Something went wrong. Please try again or email lab@anymetric.ai");
     }
   });
 });
@@ -917,7 +910,7 @@ const legalDocs = {
     <h3>7. Governing law</h3>
     <p>These terms are governed by the laws of the Republic of Serbia. Disputes will be resolved by the competent court in Novi Sad.</p>
     <h3>8. Contact</h3>
-    <p><a href="mailto:hello@anymetric.ai">hello@anymetric.ai</a></p>
+    <p><a href="mailto:lab@anymetric.ai">lab@anymetric.ai</a></p>
   `,
   cookies: `
     <h2>Cookie Policy</h2>
