@@ -610,8 +610,6 @@ html, body { max-width:100%; overflow-x:hidden; }
       <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Submit your challenge. We'll return a personalised analysis of your top 3 revenue opportunities within 48 hours. No obligation, no sales pitch.</p>
       <form class="cta-form-inline" name="results-audit" method="POST">
         <input type="hidden" name="form-name" value="results-audit">
-        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
-        <input type="hidden" name="subject" value="[anymetric] Results Audit">
         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
         <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>
         <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>
@@ -671,7 +669,7 @@ window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))close
      Good for visual QA before wiring backend.
    ════════════════════════════════════════════════ */
 
-const FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready
+const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready
 
 document.querySelectorAll("form[name]").forEach(form => {
   form.addEventListener("submit", async (e) => {

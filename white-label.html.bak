@@ -11,19 +11,19 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0d1323">
-<title>Results — anymetric</title>
-<meta name="description" content="The metrics anymetric moved. Three problems, three service types, three measurable results — anonymized by client request, verified against agreed baselines.">
+<title>White Label AI Partner — anymetric</title>
+<meta name="description" content="A silent AI R&D partner for agencies and studios. Every deliverable carries your brand. Your clients never see our name. SLA-first, full discretion, IP transferred on completion.">
 <meta property="og:type"        content="website">
-<meta property="og:url"         content="https://anymetric.ai/results">
-<meta property="og:title"       content="Results — anymetric">
-<meta property="og:description" content="Before and after. Real metrics, agreed baselines, verified results. Our names don't appear in press releases. Our impact shows up in quarterly reports.">
+<meta property="og:url"         content="https://anymetric.ai/white-label">
+<meta property="og:title"       content="White Label AI Partner — anymetric">
+<meta property="og:description" content="Your brand on everything we build. We stay invisible. Senior AI PM-led R&D delivered under your identity — for agencies that need AI capability without hiring for it.">
 <meta property="og:image"       content="https://anymetric.ai/og-image.png">
 <meta property="og:site_name"   content="anymetric">
 <meta name="twitter:card"       content="summary_large_image">
-<meta name="twitter:title"       content="Results — anymetric">
-<meta name="twitter:description" content="Before and after. Real metrics, agreed baselines, verified results. Our names don't appear in press releases. Our impact shows up in quarterly reports.">
-<meta name="twitter:image"        content="https://anymetric.ai/og-image.png">
-<link rel="canonical"           href="https://anymetric.ai/results">
+<meta name="twitter:title"      content="White Label AI Partner — anymetric">
+<meta name="twitter:description" content="Your brand on everything we build. We stay invisible. Senior AI PM-led R&D delivered under your identity — for agencies that need AI capability without hiring for it.">
+<meta name="twitter:image"      content="https://anymetric.ai/og-image.png">
+<link rel="canonical"           href="https://anymetric.ai/white-label">
 <script defer data-domain="anymetric.ai" src="https://plausible.io/js/script.tagged-events.js"></script>
 
 <!-- ── Microsoft Clarity (heatmaps, session recordings) ── -->
@@ -39,17 +39,50 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "White Label AI Partner",
+  "provider": { "@type": "Organization", "name": "anymetric", "url": "https://anymetric.ai" },
+  "description": "Silent AI R&D partnership for digital agencies, consultancies, and studios. All deliverables carry the partner's brand identity. Clients never see anymetric. SLA-first, full IP transfer, NDA-first engagement.",
+  "audience": { "@type": "BusinessAudience", "audienceType": "Digital agencies, marketing consultancies, technology studios, management consultancies" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why are your case studies anonymized?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Our clients are often enterprise brands and regulated businesses where competitive advantage depends on discretion. Many explicitly request that we not reference their company or results publicly. We respect that — the results speak for themselves without the name attached. For white-label work, NDA terms make attribution impossible by design." }
+      "name": "How does the white label arrangement work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We operate as your silent AI R&D team. You scope and sell the engagement to your client under your brand. We execute it. Every deliverable — reports, code, documentation, presentations — is produced under your brand identity with your name on it. Your client never sees anymetric referenced anywhere. We sign an NDA before any project details are shared."
+      }
     },
     {
       "@type": "Question",
-      "name": "How are the metric improvements verified?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Every engagement begins with an agreed baseline metric and a documented measurement methodology. Improvements are verified against the same methodology used to establish the baseline — client analytics, CRM data, or agreed third-party measurement tools. We do not present estimated or projected figures as results." }
+      "name": "Who owns the intellectual property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All intellectual property created during a white label engagement is assigned to you on completion of payment. This includes source code, documentation, trained prompts, architectures, and any other deliverables. We retain no rights to reuse, reference, or build upon work created for your engagements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match our agency's communication and delivery standards?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We adapt to your document templates, tone of voice, reporting cadence, and delivery format. During onboarding, we review your standard deliverable templates and align our outputs to them before the first engagement begins. Your clients receive work that is indistinguishable in format and presentation from what they expect from your team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum engagement size for white label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no minimum engagement count — we work on individual projects. However, white label arrangements work best when there is at least one active engagement at any given time, given the onboarding and NDA process. For agencies with ongoing AI demand, we offer a retainer arrangement that ensures capacity is reserved and response times are prioritised."
+      }
     }
   ]
 }
@@ -70,21 +103,23 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--text);lin
 .btn-p:hover{background:var(--accent-dim);transform:translateY(-1px);}
 .btn-g{display:inline-block;padding:15px 30px;background:transparent;color:var(--text);font-weight:700;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(221,226,249,0.25);cursor:pointer;transition:border-color .2s,color .2s;}
 .btn-g:hover{border-color:var(--accent);color:var(--accent);}
-.fl{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px;}
-input,textarea{background:transparent;color:var(--text);border:none;border-bottom:1px solid rgba(255,255,255,0.15);padding:12px 0;font-family:'Inter',sans-serif;font-size:14px;width:100%;outline:none;transition:border-color .2s;}
+input,textarea,select{background:transparent;color:var(--text);border:none;border-bottom:1px solid rgba(255,255,255,0.15);padding:12px 0;font-family:'Inter',sans-serif;font-size:14px;width:100%;outline:none;transition:border-color .2s;}
 input::placeholder,textarea::placeholder{color:var(--text-muted);}
-input:focus,textarea:focus{border-color:var(--accent);}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);}
+select option{background:var(--navy-card);color:var(--text);}
+.fl{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px;}
 section{padding:100px 0;position:relative;}
 .s-lo{background:var(--navy-lo);}
 .s-mid{background:var(--navy-mid);}
 
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--hairline);padding:0 0 0 48px;}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;padding-right:48px;}
 .nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--text);}
-.nav-wordmark{font-weight:300;font-size:16px;letter-spacing:0.08em;color:var(--text);}
+.nav-wordmark{font-weight:300;font-size:16px;letter-spacing:.08em;}
 .nav-back{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color .2s;}
-.nav-back:hover{color:var(--accent);}
 .nav-back::before{content:'← ';}
+.nav-back:hover{color:var(--accent);}
 .nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:none;border:none;cursor:pointer;padding:4px;}
 .nav-hamburger span{display:block;height:1.5px;background:var(--text-mid);border-radius:2px;transition:transform .25s,opacity .2s;}
 .nav-hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
@@ -95,74 +130,77 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 .nav-drawer a{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;padding:16px 0;border-bottom:1px solid var(--hairline);transition:color .2s;}
 .nav-drawer a:last-child{border-bottom:none;}
 .nav-drawer a:hover{color:var(--accent);}
-
-/* ── HERO ── */
-.page-hero{padding:160px 0 80px;position:relative;overflow:hidden;}
-.page-hero::before{content:'';position:absolute;width:600px;height:500px;top:-80px;right:-80px;background:radial-gradient(ellipse,rgba(110,80,220,0.1) 0%,transparent 65%);pointer-events:none;}
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 .breadcrumb{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:32px;opacity:0;animation:fu .7s ease .1s forwards;}
 .breadcrumb a{color:var(--text-muted);text-decoration:none;}
 .breadcrumb span{margin:0 10px;opacity:.4;}
-@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 
-/* ── AGGREGATE METRICS ── */
-.agg-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--hairline);}
-.agg-cell{background:var(--navy);padding:40px 24px;text-align:center;}
-.agg-num{font-size:40px;font-weight:900;line-height:1;background:linear-gradient(135deg,#ffb94c 0%,#ffe0a0 45%,#e07020 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.agg-svc{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:10px 0 6px;}
-.agg-lbl{font-size:12px;color:var(--text-muted);line-height:1.45;}
+/* HERO */
+.page-hero{padding:160px 0 100px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;width:600px;height:500px;top:-80px;right:-60px;background:radial-gradient(ellipse,rgba(110,80,220,0.1) 0%,transparent 65%);pointer-events:none;}
 
-/* ── CASE STUDIES ── */
-.cs-grid{display:grid;grid-template-columns:1fr;gap:2px;background:var(--hairline);}
-.cs-card{background:var(--navy);padding:0;}
-.cs-header{display:grid;grid-template-columns:280px 1fr auto;gap:40px;align-items:start;padding:48px 48px 40px;border-bottom:1px solid var(--hairline);}
-.cs-meta-industry{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
-.cs-title{font-size:22px;font-weight:800;line-height:1.25;margin-bottom:12px;}
-.cs-summary{font-size:14px;color:var(--text-muted);line-height:1.65;}
-.cs-badges{display:flex;flex-direction:column;gap:8px;flex-shrink:0;}
-.cs-badge{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,185,76,0.25);color:var(--accent);padding:6px 12px;white-space:nowrap;}
-.cs-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);}
-.cs-metric{background:var(--navy);padding:28px 32px;}
-.cs-metric-label{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;}
-.cs-metric-before{font-size:13px;color:var(--text-muted);margin-bottom:4px;}
-.cs-metric-after{font-size:28px;font-weight:900;line-height:1;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.cs-metric-delta{display:inline-block;font-size:11px;font-weight:700;color:#4caf50;margin-top:4px;}
-.cs-detail{padding:32px 48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-.cs-detail-section h4{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
-.cs-detail-section ul{list-style:none;}
-.cs-detail-section ul li{font-size:13px;color:var(--text-muted);padding:6px 0;border-bottom:1px solid var(--hairline);line-height:1.55;}
-.cs-detail-section ul li:last-child{border-bottom:none;}
-.cs-detail-section ul li::before{content:'→ ';color:var(--accent);font-weight:700;}
-.cs-timeline{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);padding-top:12px;}
-.cs-timeline strong{color:var(--accent);}
+/* NDA BADGE */
+.nda-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border:1px solid rgba(255,185,76,0.3);margin-bottom:32px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;opacity:0;animation:fu .9s ease .1s forwards;}
+.nda-dot{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--accent);}
 
-/* ── PROVENANCE ── */
-.prov-grid{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:center;}
-.prov-logos{display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
-.prov-logo{font-size:13px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--text-muted);opacity:.7;}
-.prov-pull{font-size:20px;font-style:italic;color:var(--text-mid);line-height:1.6;border-left:2px solid var(--accent);padding-left:28px;}
+/* HOW IT WORKS — 3-col layout */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
+.how-item{background:var(--navy);padding:48px 36px;}
+.how-n{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:18px;}
+.how-t{font-size:20px;font-weight:800;line-height:1.2;margin-bottom:14px;}
+.how-d{font-size:14px;color:var(--text-muted);line-height:1.7;}
 
-/* ── METHODOLOGY ── */
-.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);}
-.method-item{background:var(--navy);padding:36px 32px;}
-.method-n{font-size:10px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:14px;}
-.method-t{font-size:16px;font-weight:800;margin-bottom:10px;}
-.method-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+/* WHAT WE DELIVER */
+.deliver-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--hairline);}
+.dlv-row{background:var(--navy);padding:32px 36px;display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:start;}
+.dlv-row:hover{background:var(--navy-lo);}
+.dlv-svc{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);padding-top:3px;}
+.dlv-t{font-size:16px;font-weight:700;margin-bottom:8px;}
+.dlv-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
 
-/* ── FAQ ── */
+/* COMMITMENTS */
+.commit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);}
+.commit{background:var(--navy);padding:40px 28px;}
+.commit-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+.commit-t{font-size:17px;font-weight:800;margin-bottom:10px;line-height:1.2;}
+.commit-d{font-size:13px;color:var(--text-muted);line-height:1.65;}
+
+/* WHO THIS IS FOR */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.fit-col h3{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--hairline);}
+.fit-col.good h3{color:#4caf50;}
+.fit-col.bad h3{color:var(--text-muted);}
+.fit-item{font-size:14px;color:var(--text-muted);padding:10px 0;border-bottom:1px solid var(--hairline);line-height:1.5;}
+.fit-item:last-child{border-bottom:none;}
+.fit-col.good .fit-item::before{content:'✓ ';color:#4caf50;font-weight:700;}
+.fit-col.bad .fit-item::before{content:'✗ ';color:rgba(221,226,249,0.25);font-weight:700;}
+
+/* PRICING SIGNAL */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hairline);}
+.price-item{background:var(--navy);padding:40px 36px;}
+.price-tier{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+.price-name{font-size:20px;font-weight:800;margin-bottom:8px;}
+.price-desc{font-size:14px;color:var(--text-muted);line-height:1.65;margin-bottom:20px;}
+.price-includes{list-style:none;}
+.price-includes li{font-size:13px;color:var(--text-muted);padding:6px 0;border-bottom:1px solid var(--hairline);}
+.price-includes li:last-child{border-bottom:none;}
+.price-includes li::before{content:'→ ';color:var(--accent);}
+
+/* FAQ */
 .faq-item{border-bottom:1px solid var(--hairline);}
 .faq-q{padding:22px 0;font-size:15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;transition:color .2s;}
 .faq-q:hover,.faq-item.open .faq-q{color:var(--accent);}
+.faq-tog{font-size:22px;color:var(--accent);font-weight:300;flex-shrink:0;}
 .faq-tog::before{content:'+';}
 .faq-item.open .faq-tog::before{content:'−';}
-.faq-tog{font-size:22px;color:var(--accent);font-weight:300;flex-shrink:0;}
 .faq-a{display:none;padding:0 0 22px;font-size:14px;color:var(--text-muted);line-height:1.75;}
 .faq-item.open .faq-a{display:block;}
 
-/* ── CTA ── */
-.cta-form-inline{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;max-width:600px;margin:0 auto 24px;text-align:left;}
+/* CTA */
+.cta-form-inline{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;max-width:620px;margin:0 auto 24px;text-align:left;}
 .cta-form-inline .full{grid-column:1/-1;}
 
-/* ── FOOTER STRIP ── */
+/* FOOTER */
 
 /* 2-col inline grid (replaces inline style for mobile override-ability) */
 .inline-2col { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
@@ -170,22 +208,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,19,35,0.7
 
 @media(max-width:900px){
   .container{padding:0 24px;}
-  .agg-grid{grid-template-columns:repeat(3,1fr);}
-  .cs-header{grid-template-columns:1fr;gap:24px;}
-  .cs-badges{flex-direction:row;flex-wrap:wrap;}
-  .cs-metrics{grid-template-columns:1fr 1fr;}
-  .cs-detail{grid-template-columns:1fr;}
-  .prov-grid{grid-template-columns:1fr;gap:40px;}
-  .method-grid{grid-template-columns:1fr;}
+  .how-grid{grid-template-columns:1fr;}
+  .deliver-grid{grid-template-columns:1fr;}
+  .dlv-row{grid-template-columns:1fr;}
+  .commit-grid{grid-template-columns:1fr 1fr;}
+  .fit-grid{grid-template-columns:1fr;}
+  .pricing-grid{grid-template-columns:1fr;}
   .cta-form-inline{grid-template-columns:1fr;}
   .nav-back{display:none;}
   .nav-hamburger{display:flex;}
   }
 @media(max-width:540px){
-  .agg-grid{grid-template-columns:1fr 1fr;}
-  .cs-metrics{grid-template-columns:1fr;}
-  .cs-header,.cs-detail{padding:32px 24px;}
-  .cs-metric{padding:20px 24px;}
+  .commit-grid{grid-template-columns:1fr;}
   section{padding:72px 0;}
 }
 .cert { padding:8px 18px; border:1px solid rgba(255,255,255,0.12); font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); }
@@ -292,8 +326,8 @@ html, body { max-width:100%; overflow-x:hidden; }
       <span class="nav-wordmark">anymetric</span>
     </a>
     <div style="display:flex;align-items:center;gap:32px;">
-      <a class="nav-back" href="/">Back to Home</a>
-      <a href="/#audit" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — Results Nav')">GET FREE AUDIT</a>
+      <a class="nav-back" href="/#services">All Services</a>
+      <a href="#enquiry" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — WhiteLabel Nav')">PARTNER ENQUIRY</a>
       <button class="nav-hamburger" id="navHam" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -301,296 +335,245 @@ html, body { max-width:100%; overflow-x:hidden; }
 <div class="nav-drawer" id="navDrawer">
   <a href="/" onclick="closeDrawer()">Home</a>
   <a href="/#services" onclick="closeDrawer()">Services</a>
-  <a href="/#audit" onclick="closeDrawer()">Get Free Audit</a>
+  <a href="/results" onclick="closeDrawer()">Results</a>
+  <a href="#enquiry" onclick="closeDrawer()">Partner Enquiry</a>
 </div>
 
 <!-- HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumb"><a href="/">anymetric</a><span>/</span>Results</p>
-    <div class="tag">What we move</div>
-    <h1 style="font-size:clamp(40px,6vw,80px);font-weight:900;line-height:.96;letter-spacing:-.03em;margin-bottom:24px;opacity:0;animation:fu .9s ease .2s forwards;">
-      The Metrics Were Public.<br><span class="grad">Our Names Were Not.</span>
+    <p class="breadcrumb"><a href="/">anymetric</a><span>/</span>White Label Partner</p>
+    <div class="nda-badge"><div class="nda-dot"></div>NDA signed before first brief</div>
+    <div class="tag">For agencies &amp; studios</div>
+    <h1 style="font-size:clamp(40px,6vw,80px);font-weight:900;line-height:.96;letter-spacing:-.03em;margin-bottom:28px;opacity:0;animation:fu .9s ease .2s forwards;">
+      Your Brand<br>on Everything<br><span class="grad">We Build.</span>
     </h1>
-    <p style="font-size:18px;color:var(--text-mid);max-width:560px;line-height:1.68;margin-bottom:48px;opacity:0;animation:fu .9s ease .35s forwards;">We spent years moving metrics at some of the world's most recognised brands. We preferred the results to the recognition — and our clients preferred it that way too.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:32px;padding:32px 0;border-top:1px solid var(--hairline);opacity:0;animation:fu 1s ease .5s forwards;">
-      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">LVMH</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">Luxury &amp; Retail</div></div>
-      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sephora</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">E-commerce</div></div>
-      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Kingfisher</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">Retail &amp; Home Improvement</div></div>
-      <div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,#ffb94c,#e07020);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Remmers</div><div style="font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;margin-top:4px;">Industrial &amp; B2B</div></div>
+    <p style="font-size:18px;color:var(--text-mid);max-width:580px;line-height:1.68;margin-bottom:44px;opacity:0;animation:fu .9s ease .35s forwards;">We are your silent AI R&amp;D team. You own the client relationship and the deliverables. We provide the senior AI PM capability, the builds, and the results — invisibly, under your name.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:fu .9s ease .5s forwards;">
+      <a href="#enquiry" class="btn-p" onclick="plausible('CTA Click — WhiteLabel Hero')">START PARTNER ENQUIRY →</a>
+      <a href="#how-it-works" class="btn-g">HOW IT WORKS</a>
     </div>
   </div>
 </section>
 
-<!-- AGGREGATE METRICS -->
-<section style="padding:0;">
-  <div class="agg-grid">
-    <div class="agg-cell"><div class="agg-num">2×</div><div class="agg-svc">AI Personalization</div><div class="agg-lbl">Customer LTV uplift</div></div>
-    <div class="agg-cell"><div class="agg-num">+40%</div><div class="agg-svc">AI CX Agents</div><div class="agg-lbl">CSAT increase</div></div>
-    <div class="agg-cell"><div class="agg-num">+30%</div><div class="agg-svc">GEO / AEO</div><div class="agg-lbl">CR from LLM traffic</div></div>
-    <div class="agg-cell"><div class="agg-num">−60%</div><div class="agg-svc">Agentic Automation</div><div class="agg-lbl">Ops cost reduction</div></div>
-    <div class="agg-cell"><div class="agg-num">3×</div><div class="agg-svc">AI Product Build</div><div class="agg-lbl">Faster time-to-market</div></div>
-    <div class="agg-cell"><div class="agg-num">−75%</div><div class="agg-svc">AI Analytics</div><div class="agg-lbl">Reporting time saved</div></div>
-  </div>
-</section>
-
-<!-- CASE STUDIES -->
-<section>
-  <div class="container">
-    <div style="margin-bottom:56px;">
-      <div class="tag">Case studies</div>
-      <h2 style="font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;">Before &amp; After.<br><span class="grad">No Slide Decks.</span></h2>
-      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">Three problems, three service types, three very different businesses. The pattern is the same: a measurable metric, an agreed target, a delivered result. Industry noted for context — the approach transfers.</p>
-    </div>
-    <div class="cs-grid">
-
-      <!-- CS 01 -->
-      <div class="cs-card">
-        <div class="cs-header">
-          <div>
-            <div class="cs-meta-industry">Retention &amp; LTV · AI Product Build</div>
-            <div class="cs-title">Repeat Purchase Rate Nearly Doubled. First-Time Buyers Became Regulars.</div>
-            <p class="cs-summary">A mid-market e-commerce business had the traffic and the product — but customers were not coming back. AI-powered recommendation and retention pipeline identified the drop-off point and closed it in 6 weeks.</p>
-          </div>
-          <div></div>
-          <div class="cs-badges">
-            <div class="cs-badge">AI Product Build</div>
-            <div class="cs-badge">6 Weeks</div>
-          </div>
-        </div>
-        <div class="cs-metrics">
-          <div class="cs-metric">
-            <div class="cs-metric-label">Repeat Purchase Rate</div>
-            <div class="cs-metric-before">Before: 18%</div>
-            <div class="cs-metric-after">34%</div>
-            <div class="cs-metric-delta">↑ +89%</div>
-          </div>
-          <div class="cs-metric">
-            <div class="cs-metric-label">Customer LTV (12-month)</div>
-            <div class="cs-metric-before">Before: €142</div>
-            <div class="cs-metric-after">€267</div>
-            <div class="cs-metric-delta">↑ +88%</div>
-          </div>
-          <div class="cs-metric">
-            <div class="cs-metric-label">Email Revenue Attribution</div>
-            <div class="cs-metric-before">Before: 12%</div>
-            <div class="cs-metric-after">28%</div>
-            <div class="cs-metric-delta">↑ +133%</div>
-          </div>
-          <div class="cs-metric">
-            <div class="cs-metric-label">Time to Production</div>
-            <div class="cs-metric-before">Estimated: 4 months</div>
-            <div class="cs-metric-after">6 weeks</div>
-            <div class="cs-metric-delta">3× faster</div>
-          </div>
-        </div>
-        <div class="cs-detail">
-          <div class="cs-detail-section">
-            <h4>What we built</h4>
-            <ul>
-              <li>RAG-powered product recommendation engine trained on purchase and browse history</li>
-              <li>AI-driven post-purchase retention email sequence (7-step, adaptive)</li>
-              <li>Churn prediction model with automated reactivation triggers</li>
-              <li>Real-time personalisation layer on product listing pages</li>
-            </ul>
-          </div>
-          <div class="cs-detail-section">
-            <h4>How we measured</h4>
-            <ul>
-              <li>Baseline established from 90-day pre-engagement analytics</li>
-              <li>A/B test — personalised vs. control cohorts, 60-day run</li>
-              <li>LTV measured at 12-month projection from verified cohort data</li>
-              <li>Email attribution via UTM tracking in client's existing ESP</li>
-            </ul>
-            <p class="cs-timeline">Timeline: <strong>6 weeks to deployment</strong> · Guarantee: repeat purchase rate ↑ 40%+ · Delivered: ↑ 89%</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CS 02 -->
-      <div class="cs-card" style="background:var(--navy-lo);">
-        <div class="cs-header">
-          <div>
-            <div class="cs-meta-industry">Data Sovereignty · On-Premise AI</div>
-            <div class="cs-title">On-Premise AI Cuts Document Review Time by 71% Without Cloud Exposure</div>
-            <p class="cs-summary">A legal services firm needed AI-assisted document analysis but couldn't use cloud APIs due to client confidentiality obligations. Fully on-premise RAG system deployed on existing infrastructure.</p>
-          </div>
-          <div></div>
-          <div class="cs-badges">
-            <div class="cs-badge">On-Premise AI</div>
-            <div class="cs-badge">5 Weeks</div>
-          </div>
-        </div>
-        <div class="cs-metrics">
-          <div class="cs-metric" style="background:var(--navy-lo);">
-            <div class="cs-metric-label">Document Review Time</div>
-            <div class="cs-metric-before">Before: 4.2 hrs/doc</div>
-            <div class="cs-metric-after">1.2 hrs</div>
-            <div class="cs-metric-delta">↓ −71%</div>
-          </div>
-          <div class="cs-metric" style="background:var(--navy-lo);">
-            <div class="cs-metric-label">Paralegal Capacity</div>
-            <div class="cs-metric-before">Before: 6 docs/day</div>
-            <div class="cs-metric-after">21 docs</div>
-            <div class="cs-metric-delta">↑ 3.5× throughput</div>
-          </div>
-          <div class="cs-metric" style="background:var(--navy-lo);">
-            <div class="cs-metric-label">Data Sovereignty</div>
-            <div class="cs-metric-before">Before: cloud-dependent</div>
-            <div class="cs-metric-after">100% on-prem</div>
-            <div class="cs-metric-delta">Zero external exposure</div>
-          </div>
-          <div class="cs-metric" style="background:var(--navy-lo);">
-            <div class="cs-metric-label">Ops Cost / Document</div>
-            <div class="cs-metric-before">Before: €38</div>
-            <div class="cs-metric-after">€11</div>
-            <div class="cs-metric-delta">↓ −71%</div>
-          </div>
-        </div>
-        <div class="cs-detail" style="background:var(--navy-lo);">
-          <div class="cs-detail-section">
-            <h4>What we deployed</h4>
-            <ul>
-              <li>On-premise RAG pipeline using Mistral 7B (quantized) on existing GPU server</li>
-              <li>Document ingestion pipeline for PDF, DOCX, and scanned image formats</li>
-              <li>Legal clause extraction and classification system</li>
-              <li>Precedent similarity search across historical case library</li>
-            </ul>
-          </div>
-          <div class="cs-detail-section">
-            <h4>Infrastructure</h4>
-            <ul>
-              <li>Deployed on client's existing on-premise server — no new hardware required</li>
-              <li>No API calls to any external service at any point in the pipeline</li>
-              <li>Containerised with Docker — portable and reproducible</li>
-              <li>Fully documented; client's IT team trained on maintenance</li>
-            </ul>
-            <p class="cs-timeline">Timeline: <strong>5 weeks to live deployment</strong> · All data stayed on client infrastructure throughout</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CS 03 -->
-      <div class="cs-card">
-        <div class="cs-header">
-          <div>
-            <div class="cs-meta-industry">Operational Efficiency · Agentic Automation</div>
-            <div class="cs-title">Agentic Automation Eliminates 60% of Manual Reporting Overhead</div>
-            <p class="cs-summary">A B2B SaaS company had three analysts spending 40% of their time aggregating data and generating reports that could have been running themselves. Full agentic pipeline replaced the manual workflow in 3 weeks.</p>
-          </div>
-          <div></div>
-          <div class="cs-badges">
-            <div class="cs-badge">Agentic Automation</div>
-            <div class="cs-badge">3 Weeks</div>
-          </div>
-        </div>
-        <div class="cs-metrics">
-          <div class="cs-metric">
-            <div class="cs-metric-label">Weekly Reporting Hours</div>
-            <div class="cs-metric-before">Before: 48 hrs/week</div>
-            <div class="cs-metric-after">6 hrs</div>
-            <div class="cs-metric-delta">↓ −87.5%</div>
-          </div>
-          <div class="cs-metric">
-            <div class="cs-metric-label">Report Delivery Time</div>
-            <div class="cs-metric-before">Before: Monday 14:00</div>
-            <div class="cs-metric-after">Monday 07:00</div>
-            <div class="cs-metric-delta">7 hrs earlier, automated</div>
-          </div>
-          <div class="cs-metric">
-            <div class="cs-metric-label">Data Sources Integrated</div>
-            <div class="cs-metric-before">Before: manual export</div>
-            <div class="cs-metric-after">8 sources</div>
-            <div class="cs-metric-delta">Fully automated</div>
-          </div>
-          <div class="cs-metric">
-            <div class="cs-metric-label">Analyst Capacity Released</div>
-            <div class="cs-metric-before">Before: 40% on reports</div>
-            <div class="cs-metric-after">5%</div>
-            <div class="cs-metric-delta">35% redirected to analysis</div>
-          </div>
-        </div>
-        <div class="cs-detail">
-          <div class="cs-detail-section">
-            <h4>What we automated</h4>
-            <ul>
-              <li>Multi-source data ingestion from 8 SaaS platforms via API and webhook</li>
-              <li>AI-driven anomaly detection and narrative generation layer</li>
-              <li>Automated Slack and email distribution with formatted report</li>
-              <li>Exception alert system — humans notified only when action is required</li>
-            </ul>
-          </div>
-          <div class="cs-detail-section">
-            <h4>Stack &amp; approach</h4>
-            <ul>
-              <li>Agentic pipeline in Node.js with Claude Haiku for narrative generation</li>
-              <li>Deployed on client's existing Vercel infrastructure — zero new tooling</li>
-              <li>Source code fully transferred and documented; team trained on maintenance</li>
-              <li>Total cost of engagement recovered in under 6 weeks of analyst time saved</li>
-            </ul>
-            <p class="cs-timeline">Timeline: <strong>3 weeks to full automation</strong> · ROI payback: 6 weeks</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- METHODOLOGY -->
+<!-- THE PROBLEM -->
 <section class="s-lo">
   <div class="container">
+    <div class="inline-2col-even">
+      <div>
+        <div class="tag">The agency problem</div>
+        <h2 style="font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1.1;margin-bottom:20px;">Your Clients Are Asking<br>for AI. Your Team<br><span class="grad">Isn't Staffed for It.</span></h2>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">Every digital agency, consultancy, and studio is hearing the same thing from clients in 2026: <em style="color:var(--text-mid);">"What is your AI strategy? What can you do with AI for us?"</em></p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">The agencies that answer well are keeping retainers and winning new business. The ones that deflect are losing both. But building an in-house AI PM capability — certified practitioners, current tools, production experience — takes time you don't have and headcount budget you may not have approved.</p>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.75;">That gap is exactly what we fill. Invisibly.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2px;">
+        <div style="background:var(--navy-card);border:1px solid var(--hairline);padding:24px 28px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;">The typical gap</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">A client asks for an AI-powered recommendation engine, a GEO audit, or an on-premise AI system. You have the client trust and the project management infrastructure. You don't have the AI engineering and PM depth to deliver it confidently at senior level.</p>
+        </div>
+        <div style="background:var(--navy-card);border:1px solid var(--hairline);padding:24px 28px;">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#4caf50;margin-bottom:10px;">The white label answer</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">You scope and sell the engagement. We design and deliver it. Your client receives work under your brand, in your document templates, with your name on the final deck. We are the engineering and PM layer you needed — on demand, at project cost, not headcount cost.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
     <div style="margin-bottom:56px;">
-      <div class="tag">How results are verified</div>
-      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Metrics Agreed Before.<br><span class="grad">Measured After.</span></h2>
-      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">We don't measure success against deliverables. We measure it against the number we agreed to move before work began.</p>
+      <div class="tag">How it works</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Three Steps.<br><span class="grad">Your Client Never Knows.</span></h2>
     </div>
     <div class="hl" style="margin-bottom:0;"></div>
-    <div class="method-grid">
-      <div class="method-item">
-        <div class="method-n">01 — BASELINE</div>
-        <div class="method-t">Agreed metric, agreed baseline</div>
-        <p class="method-d">Before any work begins, we document the current state of the target metric using the client's own analytics or agreed third-party tooling. This becomes the benchmark everything is measured against.</p>
+    <div class="how-grid">
+      <div class="how-item">
+        <div class="how-n">01 — NDA &amp; ONBOARDING</div>
+        <div class="how-t">We sign first. Then you brief.</div>
+        <p class="how-d">Mutual NDA executed before any project details are shared. We review your standard deliverable templates, brand guidelines, tone of voice, and client communication standards. Alignment happens once — then it's seamless for every engagement.</p>
       </div>
-      <div class="method-item" style="background:var(--navy-lo);">
-        <div class="method-n">02 — TARGET</div>
-        <div class="method-t">Written target, written guarantee</div>
-        <p class="method-d">The improvement target is specified in the project agreement — not as a range, but as a floor. If we don't hit the floor within the agreed timeline, we continue at zero cost or issue a refund.</p>
+      <div class="how-item" style="background:var(--navy-lo);">
+        <div class="how-n">02 — DELIVERY</div>
+        <div class="how-t">We build. You present.</div>
+        <p class="how-d">Every deliverable — strategy documents, audits, code, dashboards, presentations — is produced under your brand identity. We communicate with you, not your client. Status updates, questions, scope changes — all routed through you. Your client sees only your team delivering.</p>
       </div>
-      <div class="method-item">
-        <div class="method-n">03 — MEASURE</div>
-        <div class="method-t">Same method, same tools</div>
-        <p class="method-d">Post-engagement results are measured with the identical methodology used to establish the baseline. We don't switch metrics or measurement tools mid-engagement. The number is the number.</p>
+      <div class="how-item">
+        <div class="how-n">03 — TRANSFER</div>
+        <div class="how-t">IP assigned. Engagement closed.</div>
+        <p class="how-d">On completion, all intellectual property is assigned to you in full: source code, documentation, trained prompts, architecture assets. We retain nothing. No ongoing dependency, no licence fee, no lock-in. You own everything we built — for ever.</p>
       </div>
     </div>
     <div class="hl" style="margin-top:0;"></div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- WHAT WE DELIVER -->
+<section class="s-lo">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Scope of work</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Everything We Build<br><span class="grad">Under Your Name.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">All six anymetric service types are available for white label delivery. The full capability — under your brand.</p>
+    </div>
+    <div class="deliver-grid">
+      <div class="dlv-row">
+        <div class="dlv-svc">GEO &amp; AEO Optimization</div>
+        <div><div class="dlv-t">AI Engine Visibility Audits &amp; Implementation</div><p class="dlv-d">Citation audit, Q&amp;A content architecture, Schema.org markup, entity authority build, citation tracking dashboard. Delivered as your agency's AI search capability.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">Voice AI Agents</div>
+        <div><div class="dlv-t">Inbound Voice AI Qualification &amp; Handling</div><p class="dlv-d">Custom voice identity, call handling flows, CRM integration, white-label voice persona. Your client hears your agency's AI solution — not ours.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">Agentic Automation</div>
+        <div><div class="dlv-t">Workflow Automation &amp; Operational AI Pipelines</div><p class="dlv-d">Multi-step agentic pipelines for reporting, onboarding, support triage, data enrichment. Source code transferred — your client's infrastructure, your agency's delivery.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">AI Product Build</div>
+        <div><div class="dlv-t">Minimum Lovable Product Development</div><p class="dlv-d">Full-stack AI product builds: recommendation engines, internal copilots, customer-facing AI tools. Delivered as your agency's product development capability.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">AI Strategy &amp; Audit</div>
+        <div><div class="dlv-t">AI Opportunity Assessment &amp; Prioritised Backlogs</div><p class="dlv-d">Workflow audits, AI opportunity scoring, ROI-ranked backlog with metric targets. Delivered in your document template, with your agency's recommendations framing.</p></div>
+      </div>
+      <div class="dlv-row">
+        <div class="dlv-svc">On-Premise AI</div>
+        <div><div class="dlv-t">Local AI Deployment for Regulated Clients</div><p class="dlv-d">Full on-premise AI architecture, model deployment, RAG pipeline, documentation, and team training. Your agency's data sovereignty solution for clients with compliance requirements.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR COMMITMENTS -->
 <section>
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Our commitments to you</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">What We Guarantee<br><span class="grad">Every Engagement.</span></h2>
+    </div>
+    <div class="hl" style="margin-bottom:0;"></div>
+    <div class="commit-grid">
+      <div class="commit">
+        <div class="commit-label">Invisibility</div>
+        <div class="commit-t">Your client never sees our name.</div>
+        <p class="commit-d">No anymetric branding, watermarks, or references in any deliverable. Document headers, footers, email domains, and communication channels all reflect your agency identity.</p>
+      </div>
+      <div class="commit" style="background:var(--navy-lo);">
+        <div class="commit-label">Discretion</div>
+        <div class="commit-t">We do not reference you without consent.</div>
+        <p class="commit-d">We do not name our white label partners publicly, in case studies, or in sales materials. Your agency's use of our capability remains confidential at your discretion.</p>
+      </div>
+      <div class="commit">
+        <div class="commit-label">IP Transfer</div>
+        <div class="commit-t">Everything we build is yours.</div>
+        <p class="commit-d">Full source code, documentation, trained assets, and architectural IP is assigned to you on completion. We retain zero rights to reuse or reference the work.</p>
+      </div>
+      <div class="commit" style="background:var(--navy-lo);">
+        <div class="commit-label">SLA-First</div>
+        <div class="commit-t">Defined response times. Direct access.</div>
+        <p class="commit-d">White label partners receive priority SLA treatment: defined response windows, direct access to the senior PM on your account, and proactive status updates without prompting.</p>
+      </div>
+    </div>
+    <div class="hl" style="margin-top:0;"></div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="s-lo">
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Fit</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Who This Works For.<br><span class="grad">Who It Doesn't.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:480px;">We work well as a white label partner when there is a clear client relationship to protect and a real AI capability gap to fill.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-col good">
+        <h3>Good fit</h3>
+        <div class="fit-item">Digital agencies with established client relationships and no in-house AI PM capability</div>
+        <div class="fit-item">Marketing consultancies whose clients are asking for GEO and AI search strategy</div>
+        <div class="fit-item">Technology studios that build products but need AI engineering depth on demand</div>
+        <div class="fit-item">Management consultancies adding AI transformation to their service portfolio</div>
+        <div class="fit-item">Boutique agencies with one or two large clients requiring AI work beyond current team capability</div>
+        <div class="fit-item">Studios that want to offer on-premise AI to regulated clients without hiring for it</div>
+      </div>
+      <div class="fit-col bad">
+        <h3>Not the right fit</h3>
+        <div class="fit-item">Businesses looking to resell our services without an active client engagement</div>
+        <div class="fit-item">Agencies expecting a generic AI product they can pitch as proprietary IP without an NDA</div>
+        <div class="fit-item">Partners who cannot commit to routing all client communication through a single point of contact</div>
+        <div class="fit-item">Engagements where the end client expects a named sub-contractor disclosure</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SIGNAL -->
+<section>
+  <div class="container">
+    <div style="margin-bottom:56px;">
+      <div class="tag">Pricing structure</div>
+      <h2 style="font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;">Project Cost.<br><span class="grad">Not Headcount Cost.</span></h2>
+      <p style="font-size:15px;color:var(--text-muted);margin-top:14px;max-width:500px;">White label is priced per project or per retainer. Margin is your business — we price to your wholesale rate. You add the markup that reflects your client relationship and account management.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-item">
+        <div class="price-tier">Project-based</div>
+        <div class="price-name">Per-Engagement Delivery</div>
+        <p class="price-desc">Scoped, priced, and delivered per client engagement. Full project fee agreed upfront. Suitable for agencies with occasional AI client demand or project-by-project work.</p>
+        <ul class="price-includes">
+          <li>Scoped before any commitment</li>
+          <li>Fixed fee per deliverable</li>
+          <li>NDA + IP assignment included</li>
+          <li>No retainer required</li>
+        </ul>
+      </div>
+      <div class="price-item" style="background:var(--navy-lo);">
+        <div class="price-tier">Retainer-based</div>
+        <div class="price-name">Reserved Capacity Arrangement</div>
+        <p class="price-desc">A fixed monthly retainer reserves a defined number of senior AI PM days per month. Priority SLA, faster turnaround, and dedicated account management. Suitable for agencies with ongoing or recurring AI client demand.</p>
+        <ul class="price-includes">
+          <li>Reserved days per month</li>
+          <li>Priority queue — your work moves first</li>
+          <li>Dedicated senior PM on your account</li>
+          <li>Rollovers for unused days (capped)</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin-top:20px;">Wholesale pricing discussed during the partner enquiry — after NDA. Rates are structured so a standard agency markup (2–3×) produces competitive client-facing pricing in your market.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="s-lo">
   <div class="container">
     <div class="inline-2col">
       <div>
         <div class="tag">FAQ</div>
-        <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">Results<br><span class="grad">Questions.</span></h2>
+        <h2 style="font-size:28px;font-weight:900;line-height:1.1;position:sticky;top:100px;">Partner<br><span class="grad">Questions.</span></h2>
       </div>
       <div>
         <div class="faq-item open">
-          <div class="faq-q">Why are your case studies anonymized?<span class="faq-tog"></span></div>
-          <div class="faq-a">Our clients are often enterprise brands and regulated businesses where competitive advantage depends on discretion. Many explicitly request that we not reference their company or results publicly. We respect that — the results speak for themselves without the name attached. For white-label work, NDA terms make attribution impossible by design.</div>
+          <div class="faq-q">How does the white label arrangement work?<span class="faq-tog"></span></div>
+          <div class="faq-a">We operate as your silent AI R&amp;D team. You scope and sell the engagement to your client under your brand. We execute it. Every deliverable — reports, code, documentation, presentations — is produced under your brand identity with your name on it. Your client never sees anymetric referenced anywhere. We sign an NDA before any project details are shared.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">How are the metric improvements verified?<span class="faq-tog"></span></div>
-          <div class="faq-a">Every engagement begins with an agreed baseline metric and a documented measurement methodology. Improvements are verified against the same methodology used to establish the baseline — client analytics, CRM data, or agreed third-party measurement tools. We do not present estimated or projected figures as results.</div>
+          <div class="faq-q">Who owns the intellectual property?<span class="faq-tog"></span></div>
+          <div class="faq-a">All intellectual property created during a white label engagement is assigned to you on completion of payment. This includes source code, documentation, trained prompts, architectures, and any other deliverables. We retain no rights to reuse, reference, or build upon work created for your engagements.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Can I speak with a previous client?<span class="faq-tog"></span></div>
-          <div class="faq-a">For engagements where the client has consented to serve as a reference, we can arrange an introduction. This is the exception rather than the rule given our discretion-first approach. Request this specifically in your audit form and we will check whether a reference introduction is possible for your specific industry and use case.</div>
+          <div class="faq-q">Can you match our agency's communication and delivery standards?<span class="faq-tog"></span></div>
+          <div class="faq-a">Yes. We adapt to your document templates, tone of voice, reporting cadence, and delivery format. During onboarding, we review your standard deliverable templates and align our outputs to them before the first engagement begins. Your clients receive work that is indistinguishable in format and presentation from what they expect from your team.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Do you only work with large enterprise clients?<span class="faq-tog"></span></div>
-          <div class="faq-a">No. The case studies shown include mid-market businesses (€5M–€50M revenue) as well as enterprise engagements. Our CEE-market pricing makes senior-calibre AI PM work accessible to businesses that would typically be priced out of equivalent Western European consultancy. The majority of our active engagements are with growth-stage businesses and founder-led companies.</div>
+          <div class="faq-q">What is the minimum engagement size for white label?<span class="faq-tog"></span></div>
+          <div class="faq-a">There is no minimum engagement count — we work on individual projects. However, white label arrangements work best when there is at least one active engagement at any given time, given the onboarding and NDA process. For agencies with ongoing AI demand, we offer a retainer arrangement that reserves capacity and prioritises your work.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do you handle communication with our clients during delivery?<span class="faq-tog"></span></div>
+          <div class="faq-a">We do not communicate directly with your clients at any point. All questions, updates, and deliverables route through you as the single point of contact. We align with your preferred communication cadence — weekly updates, async Slack channel, or formal status reports — and you present everything to your client in your voice.</div>
         </div>
       </div>
     </div>
@@ -598,29 +581,35 @@ html, body { max-width:100%; overflow-x:hidden; }
 </section>
 
 <!-- CTA -->
-<section class="s-mid" id="audit">
+<section class="s-mid" id="enquiry">
   <div class="container">
-    <div style="text-align:center;max-width:660px;margin:0 auto;">
-      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid rgba(255,185,76,0.25);font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.1em;margin-bottom:32px;">
-        <span style="width:6px;height:6px;border-radius:50%;background:#4caf50;animation:pulse 2s ease-in-out infinite;"></span>
-        ASYNC FIRST — No call required
-      </div>
-      <div class="tag">Start here</div>
-      <h2 style="font-size:clamp(28px,4vw,52px);font-weight:900;line-height:1.05;margin-bottom:18px;">Your Metrics<br><span class="grad">Could Be Next.</span></h2>
-      <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Submit your challenge. We'll return a personalised analysis of your top 3 revenue opportunities within 48 hours. No obligation, no sales pitch.</p>
-      <form class="cta-form-inline" name="results-audit" method="POST">
-        <input type="hidden" name="form-name" value="results-audit">
-        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">
-        <input type="hidden" name="subject" value="[anymetric] Results Audit">
+    <div style="text-align:center;max-width:680px;margin:0 auto;">
+      <div class="nda-badge" style="opacity:1;animation:none;margin-bottom:32px;"><div class="nda-dot"></div>NDA signed before first brief. Always.</div>
+      <div class="tag">Start a partnership</div>
+      <h2 style="font-size:clamp(28px,4vw,52px);font-weight:900;line-height:1.05;margin-bottom:18px;">Tell Us About<br><span class="grad">Your Client Gap.</span></h2>
+      <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Describe the type of AI work your clients are asking for. We'll confirm whether we're a fit and send you a partner overview and wholesale rate sheet — after NDA.</p>
+      <form class="cta-form-inline" name="white-label-enquiry" method="POST">
+        <input type="hidden" name="form-name" value="white-label-enquiry">
         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-        <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>
-        <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>
-        <div><label class="fl">Company</label><input type="text" name="company" placeholder="Your company"></div>
-        <div><label class="fl">Industry</label><input type="text" name="industry" placeholder="E-commerce / SaaS / Legal..."></div>
-        <div class="full"><label class="fl">The metric you most want to move</label><textarea name="challenge" rows="2" placeholder="E.g. Our repeat purchase rate is stuck at 15%. We have the traffic — we're losing people after first order." style="min-height:70px;"></textarea></div>
+        <div><label class="fl">Your Name</label><input type="text" name="name" placeholder="Your name" required></div>
+        <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@agency.com" required></div>
+        <div><label class="fl">Agency / Studio Name</label><input type="text" name="agency" placeholder="Your agency name"></div>
+        <div><label class="fl">Agency Size</label>
+          <select name="size">
+            <option value="">Select team size...</option>
+            <option>1–5 people</option>
+            <option>6–20 people</option>
+            <option>21–50 people</option>
+            <option>50+ people</option>
+          </select>
+        </div>
+        <div class="full">
+          <label class="fl">What AI work are your clients asking for?</label>
+          <textarea name="demand" rows="3" placeholder="E.g. Several of our e-commerce clients are asking for AI-powered personalisation and GEO optimisation. We have the PM and strategy layer but no AI engineering depth." style="min-height:80px;"></textarea>
+        </div>
         <div class="full" style="text-align:center;">
-          <button type="submit" class="btn-p" style="width:100%;max-width:340px;" onclick="plausible('Results Page Audit Submit')">GET MY FREE AUDIT →</button>
-          <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">Answered by a senior AI PM within 48 hours. A call only if you want one.</p>
+          <button type="submit" class="btn-p" style="width:100%;max-width:360px;" onclick="plausible('White Label Enquiry Submit')">SEND PARTNER ENQUIRY →</button>
+          <p style="font-size:12px;color:var(--text-muted);margin-top:12px;">We respond within 48 hours with an NDA and partner overview. No commitment required.</p>
         </div>
       </form>
     </div>
@@ -641,15 +630,22 @@ const drawer=document.getElementById('navDrawer');
 ham.addEventListener('click',()=>{
   const open=drawer.classList.toggle('open');
   ham.classList.toggle('open',open);
-  ham.setAttribute('aria-expanded', open);
+  ham.setAttribute('aria-expanded',open);
   document.body.style.overflow=open?'hidden':'';
 });
 function closeDrawer(){
-  drawer.classList.remove('open');ham.classList.remove('open');
+  drawer.classList.remove('open');
+  ham.classList.remove('open');
   ham.setAttribute('aria-expanded','false');
   document.body.style.overflow='';
 }
 window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))closeDrawer();},{passive:true});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
 </script>
 <script>
 /* ════════════════════════════════════════════════
@@ -671,7 +667,7 @@ window.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))close
      Good for visual QA before wiring backend.
    ════════════════════════════════════════════════ */
 
-const FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready
+const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready
 
 document.querySelectorAll("form[name]").forEach(form => {
   form.addEventListener("submit", async (e) => {

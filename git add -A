@@ -1,0 +1,133 @@
+warning: in the working copy of 'geo-aeo-optimization.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'on-premise-ai.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'results.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'white-label.html', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/geo-aeo-optimization.html b/geo-aeo-optimization.html[m
+[1mindex 0971a74..c1b7070 100644[m
+[1m--- a/geo-aeo-optimization.html[m
+[1m+++ b/geo-aeo-optimization.html[m
+[36m@@ -708,6 +708,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+       <p>Submit your site and top 5 buyer questions. We'll return a personalised GEO visibility report — which AI engines cite you, who they cite instead, and what to fix first.</p>[m
+       <form class="cta-form-inline" name="geo-audit" method="POST">[m
+         <input type="hidden" name="form-name" value="geo-audit">[m
+[32m+[m[32m        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m        <input type="hidden" name="subject" value="[anymetric] Geo Audit">[m
+         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+         <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>[m
+         <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>[m
+[36m@@ -776,7 +778,7 @@[m [mdocument.querySelectorAll('a[href^="#"]').forEach(a=>{[m
+      Good for visual QA before wiring backend.[m
+    ════════════════════════════════════════════════ */[m
+ [m
+[31m-const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready[m
+[32m+[m[32mconst FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready[m
+ [m
+ document.querySelectorAll("form[name]").forEach(form => {[m
+   form.addEventListener("submit", async (e) => {[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 01a3f03..0bce191 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -838,6 +838,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+       <div>[m
+         <form class="form-grid" name="audit-intake" method="POST">[m
+           <input type="hidden" name="form-name" value="audit-intake">[m
+[32m+[m[32m          <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m          <input type="hidden" name="subject" value="[anymetric] Audit request">[m
+           <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+           <div><label class="fl">Full Name</label><input type="text" name="name" placeholder="Your name" required></div>[m
+           <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>[m
+[36m@@ -990,6 +992,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+         <p style="font-size:16px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">The frameworks, architectures, and strategies our team uses to move revenue metrics with AI — from GEO optimisation to agentic systems.</p>[m
+         <form name="playbook-download" method="POST">[m
+           <input type="hidden" name="form-name" value="playbook-download">[m
+[32m+[m[32m          <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m          <input type="hidden" name="subject" value="[anymetric] Playbook download">[m
+           <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+           <input type="email" name="email" placeholder="your@company.com" style="margin-bottom:20px;" required>[m
+           <input type="text" name="company" placeholder="Your company">[m
+[36m@@ -1028,6 +1032,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+       <p class="cta-sub">Send us your challenge. We'll map your top 3 revenue opportunities and return a prioritised action plan within 48 hours. No obligation.</p>[m
+       <form class="cta-form" name="strategy-challenge" method="POST">[m
+         <input type="hidden" name="form-name" value="strategy-challenge">[m
+[32m+[m[32m        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m        <input type="hidden" name="subject" value="[anymetric] Strategy challenge">[m
+         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+         <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>[m
+         <div><label class="fl">Email</label><input type="email" name="email" placeholder="you@company.com" required></div>[m
+[36m@@ -1377,7 +1383,7 @@[m [mdocument.addEventListener('keydown',function(e){[m
+      Good for visual QA before wiring backend.[m
+    ════════════════════════════════════════════════ */[m
+ [m
+[31m-const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready[m
+[32m+[m[32mconst FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready[m
+ [m
+ document.querySelectorAll("form[name]").forEach(form => {[m
+   form.addEventListener("submit", async (e) => {[m
+[1mdiff --git a/on-premise-ai.html b/on-premise-ai.html[m
+[1mindex 9464536..6df2ac2 100644[m
+[1m--- a/on-premise-ai.html[m
+[1m+++ b/on-premise-ai.html[m
+[36m@@ -651,6 +651,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+       <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Describe your use case and infrastructure constraints. We'll return a personalised architecture recommendation and feasibility assessment within 48 hours.</p>[m
+       <form class="cta-form-inline" name="onprem-enquiry" method="POST">[m
+         <input type="hidden" name="form-name" value="onprem-enquiry">[m
+[32m+[m[32m        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m        <input type="hidden" name="subject" value="[anymetric] Onprem Enquiry">[m
+         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+         <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>[m
+         <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>[m
+[36m@@ -730,7 +732,7 @@[m [mdocument.querySelectorAll('a[href^="#"]').forEach(a=>{[m
+      Good for visual QA before wiring backend.[m
+    ════════════════════════════════════════════════ */[m
+ [m
+[31m-const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready[m
+[32m+[m[32mconst FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready[m
+ [m
+ document.querySelectorAll("form[name]").forEach(form => {[m
+   form.addEventListener("submit", async (e) => {[m
+[1mdiff --git a/results.html b/results.html[m
+[1mindex 55fe188..4ec1cc3 100644[m
+[1m--- a/results.html[m
+[1m+++ b/results.html[m
+[36m@@ -610,6 +610,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+       <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Submit your challenge. We'll return a personalised analysis of your top 3 revenue opportunities within 48 hours. No obligation, no sales pitch.</p>[m
+       <form class="cta-form-inline" name="results-audit" method="POST">[m
+         <input type="hidden" name="form-name" value="results-audit">[m
+[32m+[m[32m        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m        <input type="hidden" name="subject" value="[anymetric] Results Audit">[m
+         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+         <div><label class="fl">Name</label><input type="text" name="name" placeholder="Your name" required></div>[m
+         <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@company.com" required></div>[m
+[36m@@ -669,7 +671,7 @@[m [mwindow.addEventListener('scroll',()=>{if(drawer.classList.contains('open'))close[m
+      Good for visual QA before wiring backend.[m
+    ════════════════════════════════════════════════ */[m
+ [m
+[31m-const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready[m
+[32m+[m[32mconst FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready[m
+ [m
+ document.querySelectorAll("form[name]").forEach(form => {[m
+   form.addEventListener("submit", async (e) => {[m
+[1mdiff --git a/white-label.html b/white-label.html[m
+[1mindex a405f4b..b8aadf5 100644[m
+[1m--- a/white-label.html[m
+[1m+++ b/white-label.html[m
+[36m@@ -590,6 +590,8 @@[m [mhtml, body { max-width:100%; overflow-x:hidden; }[m
+       <p style="font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:40px;">Describe the type of AI work your clients are asking for. We'll confirm whether we're a fit and send you a partner overview and wholesale rate sheet — after NDA.</p>[m
+       <form class="cta-form-inline" name="white-label-enquiry" method="POST">[m
+         <input type="hidden" name="form-name" value="white-label-enquiry">[m
+[32m+[m[32m        <input type="hidden" name="access_key" value="0ccc9df0-0528-4fe9-81dd-a593fadfadf3">[m
+[32m+[m[32m        <input type="hidden" name="subject" value="[anymetric] White Label Enquiry">[m
+         <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>[m
+         <div><label class="fl">Your Name</label><input type="text" name="name" placeholder="Your name" required></div>[m
+         <div><label class="fl">Work Email</label><input type="email" name="email" placeholder="you@agency.com" required></div>[m
+[36m@@ -667,7 +669,7 @@[m [mdocument.querySelectorAll('a[href^="#"]').forEach(a=>{[m
+      Good for visual QA before wiring backend.[m
+    ════════════════════════════════════════════════ */[m
+ [m
+[31m-const FORM_ENDPOINT = ""; // ← PASTE endpoint here when ready[m
+[32m+[m[32mconst FORM_ENDPOINT = "https://api.web3forms.com/submit"; // ← PASTE endpoint here when ready[m
+ [m
+ document.querySelectorAll("form[name]").forEach(form => {[m
+   form.addEventListener("submit", async (e) => {[m
