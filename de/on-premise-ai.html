@@ -363,13 +363,21 @@ html, body { max-width:100%; overflow-x:hidden; }
 }
 
 
-.lang-sw{display:flex;align-items:center;gap:4px;}
-.ls-a{font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;
-  color:var(--text-muted);text-decoration:none;padding:2px 0;transition:color .18s;line-height:1;}
-.ls-a:hover{color:var(--accent);}
-.ls-a.ls-active{color:var(--accent);cursor:default;pointer-events:none;}
-.ls-sep{font-size:10px;color:var(--text-muted);opacity:0.45;user-select:none;}
+.lang-sw{position:relative;}
+.lang-sw summary{list-style:none;cursor:pointer;font-size:11px;font-weight:600;
+  letter-spacing:0.13em;text-transform:uppercase;color:var(--accent);
+  padding:2px 0;line-height:1;user-select:none;}
+.lang-sw summary::-webkit-details-marker{display:none;}
+.ls-drop{position:absolute;right:0;top:calc(100% + 6px);
+  background:var(--bg-card);border:1px solid rgba(255,255,255,.12);
+  border-radius:6px;padding:4px;min-width:64px;z-index:200;}
+.ls-opt{display:block;font-size:11px;font-weight:600;letter-spacing:0.13em;
+  text-transform:uppercase;color:var(--text-muted);text-decoration:none;
+  padding:6px 10px;border-radius:4px;transition:color .15s,background .15s;}
+.ls-opt:hover{color:var(--accent);background:rgba(255,255,255,.05);}
+.ls-opt.ls-active{color:var(--accent);cursor:default;pointer-events:none;}
 </style>
+<script>if(!localStorage.getItem('am_lang_chosen'))localStorage.setItem('am_lang_chosen','locale');</script>
 </head>
 <body>
 
@@ -382,7 +390,7 @@ html, body { max-width:100%; overflow-x:hidden; }
     <div style="display:flex;align-items:center;gap:32px;">
       <a class="nav-back" href="/#services">Alle Leistungen</a>
       <a href="#audit" class="btn-p" style="font-size:11px;padding:12px 22px;" onclick="plausible('CTA Click — OnPrem Nav')">DISCUSS YOUR REQUIREMENTS</a>
-      <div class="lang-sw" role="navigation" aria-label="Language"><a href="/on-premise-ai" class="ls-a" lang="en">EN</a><span class="ls-sep">|</span><a href="#" class="ls-a ls-active" lang="de">DE</a><span class="ls-sep">|</span><a href="/ru/on-premise-ai" class="ls-a" lang="ru">RU</a></div>
+      <details class="lang-sw" id="langSw" role="navigation" aria-label="Language"><summary class="ls-cur" lang="de">DE ▾</summary><div class="ls-drop"><a href="/on-premise-ai" class="ls-opt" lang="en" hreflang="en">EN</a><a href="#" class="ls-opt ls-active" lang="de" hreflang="de">DE</a><a href="/ru/on-premise-ai" class="ls-opt" lang="ru" hreflang="ru">RU</a></div></details>
       <button class="nav-hamburger" id="navHam" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -928,6 +936,16 @@ document.getElementById('legalOverlay').addEventListener('click',function(e){
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape') closeLegal();
 });
+</script>
+<script>
+(function(){
+  var sw=document.getElementById('langSw');
+  if(!sw)return;
+  document.addEventListener('click',function(e){if(!sw.contains(e.target))sw.removeAttribute('open');});
+  sw.querySelectorAll('.ls-opt:not(.ls-active)').forEach(function(a){
+    a.addEventListener('click',function(){localStorage.setItem('am_lang_chosen','manual');});
+  });
+}());
 </script>
 
 </body>
